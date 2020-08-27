@@ -1,15 +1,18 @@
 import React from 'react'
+import PC from './pc'
+
 
 type Props = {
 
 }
 
 // 関数コンポーネント（returnに表示するhetmlをかく）
-const Top: React.FC<Props> = () => {
+const Entrance: React.FC<Props> = () => {
 
   return (
     <div className="entrance">
       <div className="entrance__left">
+        <PC />
       </div>
       <div className="entrance__center">
         <div className="entrance__center--title">
@@ -25,4 +28,4 @@ const Top: React.FC<Props> = () => {
   )
 }
 
-export default Top
+export default Entrance

@@ -7,6 +7,10 @@
     width: calc(50% - 140px);
     height: 100%;
     float: left;
+    svg{
+      height: 100px;
+      width: 100px;
+    }
   }
   &__center{
     width: 280px;
@@ -29,7 +33,6 @@
     &--button{
       margin: 0 auto;
       margin-top: 70%;
-      height: 50%;
       button{
         bottom: 50px;
         background-color: $black;
