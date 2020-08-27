@@ -11,7 +11,15 @@ const Top: React.FC<Props> = () => {
     <div className="entrance">
       <div className="entrance__left">
       </div>
-      <div className="entrance__center"></div>
+      <div className="entrance__center">
+        <div className="entrance__center--title">
+          Portfolio
+          <div className="entrance__center--line"></div>
+        </div>
+        <div className="entrance__center--button">
+          <button>see more</button>
+        </div>
+      </div>
       <div className="entrance__right"></div>
     </div>
   )

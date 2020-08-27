@@ -3,4 +3,48 @@
   width: 100vw;
   background-color: $black;
   margin-top: 50px;
+  &__left{
+    width: calc(50% - 140px);
+    height: 100%;
+    float: left;
+  }
+  &__center{
+    width: 280px;
+    height: 100%;
+    float: left;
+    color: $white;
+    text-align: center;
+    &--title{
+      padding-top: 90%;
+      font-size: 70px;
+      height: 40%;
+    }
+    &--line{
+      margin-top: 15px;
+      border-top: $white 3px solid;
+      width: 60%;
+      margin-left: 20%;
+      height: 5%;
+    }
+    &--button{
+      margin: 0 auto;
+      margin-top: 70%;
+      height: 50%;
+      button{
+        bottom: 50px;
+        background-color: $black;
+        border: $white 2px solid;
+        color: $white;
+        font-size: 18px;
+        border-radius: 5px;
+        padding: 4px;
+      }
+    }
+  }
+  &__right{
+    width: calc(50% - 140px);
+    height: 100%;
+    float: left;
+  }
+
 }
