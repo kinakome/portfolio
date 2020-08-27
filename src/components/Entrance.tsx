@@ -8,8 +8,11 @@ type Props = {
 const Top: React.FC<Props> = () => {
 
   return (
-    <div>
-      aaaa
+    <div className="entrance">
+      <div className="entrance__left">
+      </div>
+      <div className="entrance__center"></div>
+      <div className="entrance__right"></div>
     </div>
   )
 }
