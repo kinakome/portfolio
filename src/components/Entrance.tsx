@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PC from './pc'
-
+import { useTrail, animated, config } from "react-spring";
 
 type Props = {
 
@@ -8,6 +8,14 @@ type Props = {
 
 // 関数コンポーネント（returnに表示するhetmlをかく）
 const Entrance: React.FC<Props> = () => {
+  const msg = "Hello React Spring";
+  const [{ x, y }, setXY] = useState({ x: 0, y: 0 });
+  const trails = useTrail(msg.length, {
+    config: config.gentle,
+    left: `${x}px`,
+    top: `${y}px`,
+    position: "absolute"
+  });
 
   return (
     <div className="entrance">

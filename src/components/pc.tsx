@@ -1,7 +1,6 @@
 import React from 'react'
 import { useTrail, animated, config } from "react-spring";
 
-
 type Props = {
 
 }
