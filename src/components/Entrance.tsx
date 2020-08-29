@@ -6,7 +6,6 @@ type Props = {
 
 }
 
-// 関数コンポーネント（returnに表示するhetmlをかく）
 const Entrance: React.FC<Props> = () => {
   const msg = "Hello React Spring";
   const [{ x, y }, setXY] = useState({ x: 0, y: 0 });
