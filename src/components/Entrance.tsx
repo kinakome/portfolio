@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import PC from './pc'
 import { useTrail, animated, config } from "react-spring";
+import { Link } from 'react-scroll';
 
 type Props = {
 
@@ -41,7 +42,15 @@ const Entrance: React.FC<Props> = () => {
         <div className="entrance__center--line"></div>
         </div>
         <div className="entrance__center--button">
-          <button>see more</button>
+          <Link
+            activeClass="active"
+            to="top"
+            spy={true}
+            smooth={true}
+            duration= {800}
+          >
+            <button>see more</button>
+          </Link> 
         </div>
       </div>
       <div className="entrance__right"></div>

@@ -86,3 +86,52 @@ hr {
 
 input, select {
   vertical-align: middle; }
+
+.entrance {
+  height: calc(100vh - 100px);
+  width: 100vw;
+  background-color: #333;
+  margin-top: 50px; }
+  .entrance__left {
+    width: calc(50% - 140px);
+    height: 100%;
+    float: left; }
+    .entrance__left svg {
+      height: 100px;
+      width: 100px; }
+  .entrance__center {
+    width: 280px;
+    height: 100%;
+    float: left;
+    color: #FFF;
+    text-align: center; }
+    .entrance__center--title {
+      padding-top: 90%;
+      font-size: 70px;
+      height: 40%; }
+    .entrance__center--line {
+      margin-top: 15px;
+      border-top: #FFF 3px solid;
+      width: 60%;
+      margin-left: 20%;
+      height: 5%; }
+    .entrance__center--button {
+      margin: 0 auto;
+      margin-top: 70%; }
+      .entrance__center--button button {
+        bottom: 50px;
+        background-color: #333;
+        border: #FFF 2px solid;
+        color: #FFF;
+        font-size: 18px;
+        border-radius: 5px;
+        padding: 4px; }
+  .entrance__right {
+    width: calc(50% - 140px);
+    height: 100%;
+    float: left; }
+
+.top {
+  height: 100vh;
+  width: 100vw;
+  background-color: red; }
