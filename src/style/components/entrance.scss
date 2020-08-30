@@ -4,16 +4,17 @@
   background-color: $black;
   margin-top: 50px;
   &__left{
-    width: calc(50% - 140px);
+    width: calc(50% - 120px);
     height: 100%;
     float: left;
-    svg{
-      height: 100px;
-      width: 100px;
+    padding: 10% 10%;
+    img{
+      height: 100%;
+      width: 100%;
     }
   }
   &__center{
-    width: 280px;
+    width: 240px;
     height: 100%;
     float: left;
     color: $white;
@@ -45,9 +46,14 @@
     }
   }
   &__right{
-    width: calc(50% - 140px);
+    width: calc(50% - 120px);
     height: 100%;
     float: left;
+    padding: 10% 10%;
+    img{
+      height: 90%;
+      width: 90%;
+    }
   }
 
 }

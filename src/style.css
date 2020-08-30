@@ -93,14 +93,15 @@ input, select {
   background-color: #333;
   margin-top: 50px; }
   .entrance__left {
-    width: calc(50% - 140px);
+    width: calc(50% - 120px);
     height: 100%;
-    float: left; }
-    .entrance__left svg {
-      height: 100px;
-      width: 100px; }
+    float: left;
+    padding: 10% 10%; }
+    .entrance__left img {
+      height: 100%;
+      width: 100%; }
   .entrance__center {
-    width: 280px;
+    width: 240px;
     height: 100%;
     float: left;
     color: #FFF;
@@ -127,9 +128,13 @@ input, select {
         border-radius: 5px;
         padding: 4px; }
   .entrance__right {
-    width: calc(50% - 140px);
+    width: calc(50% - 120px);
     height: 100%;
-    float: left; }
+    float: left;
+    padding: 10% 10%; }
+    .entrance__right img {
+      height: 90%;
+      width: 90%; }
 
 .top {
   height: 100vh;
@@ -143,6 +148,8 @@ input, select {
     height: calc(100vh - 120px);
     width: calc(100vw - 40px);
     position: relative; }
+    .top__box--content {
+      height: calc(100vh - 300px); }
     .top__box--bottom {
       position: absolute;
       width: 100%;
@@ -179,3 +186,13 @@ input, select {
   .nav .selected {
     border-bottom: #333 8px solid;
     background-color: #3b3b3b; }
+
+.profile {
+  padding: 13px;
+  height: 100%;
+  width: 100%; }
+  .profile__left {
+    height: 100%;
+    width: 70%;
+    border: #333 3px solid;
+    border-radius: 10px; }

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import PC from './pc'
 import { useTrail, animated, config } from "react-spring";
 import { Link } from 'react-scroll';
+import { PCIcon, CameraIcon } from './SvgReader'
 
 type Props = {
 
@@ -21,7 +22,7 @@ const Entrance: React.FC<Props> = () => {
   return (
     <div className="entrance">
       <div className="entrance__left">
-        <PC />
+        <PCIcon />
       </div>
       <div className="entrance__center">
         <div className="entrance__center--title" onMouseEnter={e => setEnter(true)} onMouseLeave={e => setEnter(false)} >
@@ -53,7 +54,9 @@ const Entrance: React.FC<Props> = () => {
           </Link> 
         </div>
       </div>
-      <div className="entrance__right"></div>
+      <div className="entrance__right">
+        <CameraIcon />
+      </div>
     </div>
   )
 }
