@@ -5,12 +5,17 @@ type Props = {
 
 }
 
-// 関数コンポーネント（returnに表示するhetmlをかく）
 const Top: React.FC<Props> = () => {
 
   return (
     <div className="top">
-
+      <div className="top__box">    
+        <div className="top__box--bottom"></div> 
+      </div>
+      <div className="top__foot">    
+        <div className="top__foot--up"></div>
+        <div className="top__foot--bottom"></div>
+      </div>
     </div>
   )
 }
