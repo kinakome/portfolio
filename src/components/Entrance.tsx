@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import PC from './pc'
-import { useTrail, animated, config } from "react-spring";
+import { useTrail, useSpring, animated, config } from "react-spring";
 import { Link } from 'react-scroll';
 import { PCIcon, CameraIcon } from './SvgReader'
 
