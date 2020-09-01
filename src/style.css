@@ -192,22 +192,62 @@ input, select {
   width: 100%; }
   .profile__left {
     height: 100%;
-    width: calc(100% - 300px);
+    width: calc(100% - 200px);
     border: #333 3px solid;
     border-radius: 10px;
     padding: 10px;
     float: left; }
     .profile__left__icon {
-      width: 120px; }
+      width: 120px;
+      float: left; }
       .profile__left__icon img {
         height: 100px;
         width: 100px; }
       .profile__left__icon--title {
         margin: 5px 7px;
         font-size: 22px; }
+    .profile__left__contents {
+      width: calc(100% - 125px);
+      padding: 10px;
+      float: right; }
+      .profile__left__contents--name {
+        font-size: 25px; }
+      .profile__left__contents--age {
+        margin-top: 15px;
+        font-size: 18px; }
+      .profile__left__contents--history {
+        margin-top: 10px;
+        line-height: 25px; }
   .profile__right {
     float: right; }
     .profile__right img {
-      margin: 100px;
+      margin: 100px 50px;
       height: 100px;
       width: 100px; }
+
+.skill {
+  padding: 13px;
+  height: 100%;
+  width: 100%; }
+  .skill__left {
+    float: left; }
+    .skill__left img {
+      margin: 100px 50px;
+      height: 100px;
+      width: 100px; }
+  .skill__right {
+    height: 100%;
+    width: calc(100% - 200px);
+    border: #333 3px solid;
+    border-radius: 10px;
+    padding: 10px;
+    float: right; }
+    .skill__right__icon {
+      width: 120px;
+      float: left; }
+      .skill__right__icon img {
+        height: 100px;
+        width: 100px; }
+      .skill__right__icon--title {
+        margin: 5px 7px;
+        font-size: 22px; }

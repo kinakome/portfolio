@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from './Top/Nav'
 import Profile from './Top/Profile'
+import Skill from './Top/Skill'
 import { Reveal } from "react-genie";
 import { Animation } from "react-genie-styled-components";
 
@@ -20,7 +21,8 @@ const Top: React.FC<Props> = () => {
           <Reveal delay={monitorTime} animation={Animation.FadeIn}>
           <div className="top__box--content">
             <Nav />
-            <Profile />
+            {/* <Profile /> */}
+            <Skill />
           </div>
           </Reveal>
           <div className="top__box--bottom"></div> 

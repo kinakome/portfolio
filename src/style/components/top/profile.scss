@@ -4,13 +4,14 @@
   width: 100%;
   &__left{
     height: 100%;
-    width: calc(100% - 300px);
+    width: calc(100% - 200px);
     border: $black 3px solid;
     border-radius: 10px;
     padding: 10px;
     float: left;
     &__icon{
       width: 120px;
+      float: left;
       img{
         height: 100px;
         width: 100px;
@@ -20,11 +21,27 @@
         font-size: 22px;
       }
     }
+    &__contents{
+      width: calc(100% - 125px);
+      padding: 10px;
+      float: right;
+      &--name{
+        font-size: 25px;
+      }
+      &--age{
+        margin-top: 15px;
+        font-size: 18px;
+      }
+      &--history{
+        margin-top: 10px;
+        line-height: 25px;
+      }
+    }
   }
   &__right{
     float: right;
     img{
-      margin: 100px;
+      margin: 100px 50px;
       height: 100px;
       width: 100px;
     }

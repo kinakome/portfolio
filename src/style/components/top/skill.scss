@@ -1,0 +1,33 @@
+.skill{
+  padding: 13px;
+  height: 100%;
+  width: 100%;
+  &__left{
+    float: left;
+    img{
+      margin: 100px 50px;
+      height: 100px;
+      width: 100px;
+    }
+  }
+  &__right{
+    height: 100%;
+    width: calc(100% - 200px);
+    border: $black 3px solid;
+    border-radius: 10px;
+    padding: 10px;
+    float: right;
+    &__icon{
+      width: 120px;
+      float: left;
+      img{
+        height: 100px;
+        width: 100px;
+      }
+      &--title{
+        margin: 5px 32px;
+        font-size: 22px;
+      }
+    }
+  }
+}
