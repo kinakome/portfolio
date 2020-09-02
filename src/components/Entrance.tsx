@@ -27,14 +27,6 @@ const Entrance: React.FC<Props> = () => {
       <div className="entrance__center">
         <div className="entrance__center--title" onMouseEnter={e => setEnter(true)} onMouseLeave={e => setEnter(false)} >
           {trails.map((trail, idx) => (
-            // <animated.span style={{ ...trail,
-            //   transform: trail.x
-            //   .interpolate({
-            //     range: [0,1],
-            //     output: ["0deg", "360deg"]
-            //   })
-            //   .interpolate(x => `rotateX(${x})`)
-            // }}>
             <animated.span style={{ ...trail
             }}>
               {title[idx]}

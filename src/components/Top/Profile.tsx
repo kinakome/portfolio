@@ -1,5 +1,6 @@
 import React from 'react'
 import { ProfileIcon } from '../SvgReader'
+import { Link } from 'react-scroll';
 
 type Props = {
 
@@ -21,9 +22,17 @@ const Profile: React.FC<Props> = () => {
           現在はSIerにてAzureの構築やアプリケーション制作・製品導入を行いつつ、空いた時間で個人開発を行っています。
         </div>
       </div>
-      <div className="profile__button">
-        <div className="profile__button--arrow"></div>
-      </div>
+      <Link
+            activeClass="active"
+            to="skill"
+            spy={true}
+            smooth={true}
+            duration= {800}
+          >
+        <div className="profile__button">
+          <div className="profile__button--arrow"></div>
+        </div>
+      </Link> 
     </div>
   )
 }
