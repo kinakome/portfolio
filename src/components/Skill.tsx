@@ -1,13 +1,16 @@
 import React from 'react'
-import { ProfileIcon, SkillIcon } from '../SvgReader'
+import { ProfileIcon, SkillIcon } from './SvgReader'
+import { Reveal } from "react-genie";
+import { Animation } from "react-genie-styled-components";
 
 type Props = {
 
 }
 
 const Skill: React.FC<Props> = () => {
-
+  const delayTime = 1000
   return (
+    <Reveal delay={delayTime} animation={Animation.FadeIn}>
     <div className="skill">
       <div className="skill__left">
         <ProfileIcon />
@@ -19,6 +22,7 @@ const Skill: React.FC<Props> = () => {
         </div>
       </div>
     </div>
+    </Reveal>
   )
 }
 

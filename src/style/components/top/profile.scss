@@ -1,7 +1,8 @@
 .profile{
-  padding: 25px;
+  padding: 30px 3%;
   height: 100%;
   width: 100%;
+  position: relative;
   &__icon{
     width: 120px;
     float: left;
@@ -12,12 +13,15 @@
     &--title{
       margin: 5px 7px;
       font-size: 22px;
+      font-family: 'Josefin Sans', 'Semi-bold';
     }
   }
   &__contents{
-    width: calc(100% - 125px);
+    width: calc(100% - 125px - 4%);
+    margin-left: 4%;
     padding: 10px;
     float: right;
+    font-family: 'Noto Sans JP', sans-serif;
     &--name{
       font-size: 25px;
     }
@@ -28,6 +32,30 @@
     &--history{
       margin-top: 10px;
       line-height: 25px;
+    }
+  }
+  &__button{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: 3px $black solid;
+    position: absolute;
+    bottom: 10%;
+    left: calc(50% - 25px);
+    &--arrow{
+      position: relative;
+      &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 50%;
+        width: 14px;
+        height: 14px;
+        border-top: 2px solid $black;
+        border-right: 2px solid $black;
+        transform: translateX(-50%) rotate(135deg);
+      }
     }
   }
 }

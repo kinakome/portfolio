@@ -19,6 +19,7 @@
     float: left;
     color: $white;
     text-align: center;
+    font-family: 'Josefin Sans', 'Semi-bold';
     &--title{
       padding-top: 90%;
       font-size: 70px;
@@ -42,6 +43,8 @@
         font-size: 18px;
         border-radius: 5px;
         padding: 4px;
+        font-family: 'Josefin Sans', 'Semi-bold';
+
       }
     }
   }

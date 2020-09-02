@@ -1,5 +1,5 @@
 import React from 'react'
-import { ProfileIcon, SkillIcon } from '../SvgReader'
+import { ProfileIcon } from '../SvgReader'
 
 type Props = {
 
@@ -11,7 +11,7 @@ const Profile: React.FC<Props> = () => {
     <div className="profile">
       <div className="profile__icon">
         <ProfileIcon />
-        <div className="profile__icon--title">about me</div>
+        <div className="profile__icon--title">About Me</div>
       </div>
       <div className="profile__contents">
         <div className="profile__contents--name">松岡　諒</div>
@@ -20,6 +20,9 @@ const Profile: React.FC<Props> = () => {
           在学中はサークルおよび個人でのアプリケーション開発の他に、プログラミングスクールでインターンを1年半ほど行っていました。<br/>
           現在はSIerにてAzureの構築やアプリケーション制作・製品導入を行いつつ、空いた時間で個人開発を行っています。
         </div>
+      </div>
+      <div className="profile__button">
+        <div className="profile__button--arrow"></div>
       </div>
     </div>
   )
