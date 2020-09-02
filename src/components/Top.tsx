@@ -20,9 +20,9 @@ const Top: React.FC<Props> = () => {
         <div className="top__box">    
           <Reveal delay={monitorTime} animation={Animation.FadeIn}>
           <div className="top__box--content">
-            <Nav />
-            {/* <Profile /> */}
-            <Skill />
+            {/* <Nav /> */}
+            <Profile />
+            {/* <Skill /> */}
           </div>
           </Reveal>
           <div className="top__box--bottom"></div> 

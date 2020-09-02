@@ -2,6 +2,7 @@ import React from 'react'
 import './style/style.scss'
 import Entrance from './components/Entrance'
 import Top from './components/Top'
+import Header from './components/Header'
 import { ReactGenieAnimations } from "react-genie-styled-components";
 
 
@@ -13,6 +14,7 @@ const App: React.FC = () => {
   return (
     <div>
       <ReactGenieAnimations />
+      <Header />
       <Entrance />
       <Top />
     </div>
