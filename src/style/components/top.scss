@@ -1,7 +1,7 @@
 .top{
   height: calc(100vh + 100px);
   width: 100vw;
-  background-color: rgb(243, 243, 243);
+  background-color: $lightGray;
   padding: 20px 20px 30px 20px;
   position: relative;
   &__index{

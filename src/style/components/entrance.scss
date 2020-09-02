@@ -1,5 +1,5 @@
 .entrance{
-  height: calc(100vh - 140px);
+  height: calc(100vh - 70px);
   width: 100vw;
   background-color: $black;
   margin: 70px 0px 90px 0px;
@@ -19,7 +19,7 @@
     float: left;
     color: $white;
     text-align: center;
-    font-family: 'Josefin Sans', 'Semi-bold';
+    font-family: 'Source Sans Pro', sans-serif;
     &--title{
       padding-top: 90%;
       font-size: 70px;
@@ -40,11 +40,10 @@
         background-color: $black;
         border: $white 2px solid;
         color: $white;
-        font-size: 18px;
+        font-size: 15px;
         border-radius: 5px;
-        padding: 4px;
-        font-family: 'Josefin Sans', 'Semi-bold';
-
+        padding: 3px 5px 5px 5px;
+        font-family: 'Source Sans Pro', sans-serif;
       }
     }
   }

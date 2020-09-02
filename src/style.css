@@ -8,6 +8,7 @@ Twitter: @rich_clark
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300&display=swap");
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -90,8 +91,11 @@ hr {
 input, select {
   vertical-align: middle; }
 
+.wrapper {
+  background-color: #f3f3f3; }
+
 .entrance {
-  height: calc(100vh - 140px);
+  height: calc(100vh - 70px);
   width: 100vw;
   background-color: #333;
   margin: 70px 0px 90px 0px; }
@@ -109,7 +113,7 @@ input, select {
     float: left;
     color: #FFF;
     text-align: center;
-    font-family: 'Josefin Sans', 'Semi-bold'; }
+    font-family: 'Source Sans Pro', sans-serif; }
     .entrance__center--title {
       padding-top: 90%;
       font-size: 70px;
@@ -128,10 +132,10 @@ input, select {
         background-color: #333;
         border: #FFF 2px solid;
         color: #FFF;
-        font-size: 18px;
+        font-size: 15px;
         border-radius: 5px;
-        padding: 4px;
-        font-family: 'Josefin Sans', 'Semi-bold'; }
+        padding: 3px 5px 5px 5px;
+        font-family: 'Source Sans Pro', sans-serif; }
   .entrance__right {
     width: calc(50% - 120px);
     height: 100%;
@@ -234,8 +238,8 @@ input, select {
     width: 120px;
     float: left; }
     .profile__icon img {
-      height: 100px;
-      width: 100px; }
+      height: 70px;
+      width: 70px; }
     .profile__icon--title {
       margin: 5px 7px;
       font-size: 22px;
@@ -284,28 +288,25 @@ input, select {
     transform: translateY(0px); } }
 
 .skill {
-  margin-top: 100px;
+  margin-top: 50px;
   height: 100vh;
-  width: 100vw; }
-  .skill__left {
-    float: left; }
-    .skill__left img {
-      margin: 100px 50px;
-      height: 100px;
-      width: 100px; }
-  .skill__right {
-    height: 100%;
-    width: calc(100% - 200px);
-    border: #333 3px solid;
-    border-radius: 10px;
-    padding: 10px;
-    float: right; }
-    .skill__right__icon {
-      width: 120px;
+  width: 100vw;
+  padding-top: 70px; }
+  .skill__header {
+    height: 100px;
+    width: 100%;
+    background-color: #333;
+    float: left;
+    padding-top: 15px; }
+    .skill__header img {
+      height: 70px;
+      width: 70px;
+      margin-left: calc(40px + 3vw);
       float: left; }
-      .skill__right__icon img {
-        height: 100px;
-        width: 100px; }
-      .skill__right__icon--title {
-        margin: 5px 32px;
-        font-size: 22px; }
+    .skill__header--title {
+      font-size: 30px;
+      color: #FFF;
+      margin-left: 30px;
+      font-family: 'Josefin Sans', 'Semi-bold';
+      float: left;
+      padding-top: 25px; }

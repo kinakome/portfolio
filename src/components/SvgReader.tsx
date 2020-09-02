@@ -1,7 +1,7 @@
 import ProfileImg from '../images/profile.svg'
 import PCImg from '../images/pc.svg'
 import CameraImg from '../images/camera.svg'
-import SkillImg from '../images/skill.svg'
+import SkillImg from '../images/skill-black.svg'
 import { useSpring, animated } from "react-spring";
 
 
