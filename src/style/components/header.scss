@@ -8,12 +8,12 @@
   opacity: 0.8;
   box-shadow: 0 0 5px #D2D2D2;
   font-family: 'Josefin Sans', 'Semi-bold';
-
+  right: 0;
   &__menu{
     &__list{
       float: right;
       list-style: none;
-      padding: 20px 100px 10px 10px;
+      padding: 20px 50px 10px 10px;
       li{
         float: left;
         margin-left: 50px;

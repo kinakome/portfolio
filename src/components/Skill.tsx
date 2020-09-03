@@ -13,7 +13,7 @@ const Skill: React.FC<Props> = () => {
     <Reveal delay={delayTime} animation={Animation.FadeIn}>
     <div className="skill">
       <div className="skill__header">
-        <SkillIcon />
+        <div className="skill__header--line"></div>
         <div className="skill__header--title">Skill</div>
       </div>
     </div>
