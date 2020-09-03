@@ -4,9 +4,7 @@
   position: relative;
   &__left{
     width: 30%;
-    min-width: 200px;
     float: left;
-    // padding-top: 100px;
     position: relative;
     
     &--line{
@@ -32,54 +30,54 @@
     float: right;
     padding-top: 100px;
     position: relative;
-    &__contents{
-      width: 60%;
-      margin: 0 auto;
-      font-family: 'Noto Sans JP', sans-serif;
-      color: $black;
-      &--name{
-        font-size: 30px;
-        margin-bottom: 20px;
-      }
-      &--age{
-        font-size: 22px;
-        margin-bottom: 20px;
-      }
-      &--history{
-        font-size: 18px;
-        line-height: 33px;
-        color: $lightBlack;
+  }
+  &__contents{
+    width: 60%;
+    margin: 0 auto;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: $black;
+    &--name{
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    &--age{
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    &--history{
+      font-size: 18px;
+      line-height: 33px;
+      color: $lightBlack;
+    }
+  }
+  &__button{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: $black;
+    animation: vertical 1s ease-in-out infinite alternate;  
+    top: 0;
+    margin: 10% calc(50% - 25px);
+
+    &--arrow{
+      position: relative;
+      &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 14px;
+        right: 7px;
+        width: 14px;
+        height: 14px;
+        border-top: 4px solid $white;
+        border-right: 4px solid $white;
+        transform: translateX(-50%) rotate(135deg);
       }
     }
-    &__button{
-      border-radius: 50%;
-      height: 50px;
-      width: 50px;
-      background-color: $black;
-      animation: vertical 1s ease-in-out infinite alternate;  
-      top: 0;
-      margin: 10% calc(50% - 25px);
-  
-      &--arrow{
-        position: relative;
-        &::before{
-          content: "";
-          display: block;
-          position: absolute;
-          top: 14px;
-          right: 7px;
-          width: 14px;
-          height: 14px;
-          border-top: 4px solid $white;
-          border-right: 4px solid $white;
-          transform: translateX(-50%) rotate(135deg);
-        }
-      }
-  
-      @keyframes vertical {
-          0% { transform:translateY(-10px); }
-        100% { transform:translateY(  0px); }
-      }
+
+    @keyframes vertical {
+        0% { transform:translateY(-10px); }
+      100% { transform:translateY(  0px); }
     }
   }
 }

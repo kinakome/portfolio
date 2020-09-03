@@ -27,10 +27,10 @@ const Top: React.FC<Props> = () => {
       </div>
       <Reveal delay={contentsTime} animation={Animation.SlideInRight}>
       <div className="top__right">   
-        <div className="top__right__contents">
-          <div className="top__right__contents--name">松岡 諒</div> 
-          <div className="top__right__contents--age">1994年生まれ 26歳</div> 
-          <div className="top__right__contents--history">
+        <div className="top__contents">
+          <div className="top__contents--name">松岡 諒</div> 
+          <div className="top__contents--age">1994年生まれ 26歳</div> 
+          <div className="top__contents--history">
             大学2年生でプログラミングを始めました。在学中はサークルおよび個人でのアプリケーション開発の他に、
             プログラミングスクールでインターンを1年半ほど行っていました。現在はSIerにてAzureの構築やアプリケーション制作・
             製品導入に携わっており、空いた時間で個人開発を行っています。
@@ -44,8 +44,8 @@ const Top: React.FC<Props> = () => {
                 smooth={true}
                 duration= {800}
               >
-            <div className="top__right__button">
-              <div className="top__right__button--arrow"></div>
+            <div className="top__button">
+              <div className="top__button--arrow"></div>
             </div>
           </Link>
         </Reveal>

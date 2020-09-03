@@ -11,7 +11,7 @@ const Header: React.FC<Props> = () => {
   return (
     <div className="header">
       <div className="header__menu">
-        <ul className="header__menu__list">
+        <ul className="header__menu--list">
           <Link
               activeClass="active"
               to="top"
