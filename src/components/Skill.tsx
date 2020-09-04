@@ -2,9 +2,11 @@ import React from 'react'
 import { SkillIcon } from './SvgReader'
 import { Reveal } from "react-genie";
 import { Animation } from "react-genie-styled-components";
+import SkillBox from './Skillbox'
+
+
 
 type Props = {
-
 }
 
 const Skill: React.FC<Props> = () => {
@@ -33,30 +35,8 @@ const Skill: React.FC<Props> = () => {
             <span className="skill-type__title">Frontend</span>
           </div>
           <div className="skill-detail">
-          <Reveal delay={skillTime} animation={Animation.FadeInUp}>
-          <div className="skill-detail__box"></div>
-          </Reveal>
-          <Reveal delay={skillTime} animation={Animation.FadeInUp}>
-          <div className="skill-detail__box"></div>
-          </Reveal>
-          <Reveal delay={skillTime} animation={Animation.FadeInUp}>
-          <div className="skill-detail__box"></div>
-          </Reveal>
-          <Reveal delay={skillTime} animation={Animation.FadeInUp}>
-          <div className="skill-detail__box"></div>
-          </Reveal>
-          <Reveal delay={skillTime} animation={Animation.FadeInUp}>
-          <div className="skill-detail__box"></div>
-          </Reveal>
-          <Reveal delay={skillTime} animation={Animation.FadeInUp}>
-          <div className="skill-detail__box"></div>
-          </Reveal>
-          <Reveal delay={skillTime} animation={Animation.FadeInUp}>
-          <div className="skill-detail__box"></div>
-          </Reveal>
-          <Reveal delay={skillTime} animation={Animation.FadeInUp}>
-          <div className="skill-detail__box"></div>
-          </Reveal>
+            <SkillBox name="" period="" icon="" />
+            <SkillBox name="" period="" icon=""  />
           </div>
         </div>
       </Reveal>

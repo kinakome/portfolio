@@ -279,6 +279,12 @@ input, select {
         position: absolute;
         top: 35px;
         left: calc(3% + 80px); }
+
+@keyframes vertical {
+  0% {
+    transform: translateY(-10px); }
+  100% {
+    transform: translateY(0px); } }
       .skill__contents .skill-type__side-box--left {
         height: 40px;
         width: 40px;
@@ -296,7 +302,8 @@ input, select {
         transform: rotate(45deg);
         position: absolute;
         top: 60px;
-        left: calc(3% + 210px); }
+        left: calc(3% + 210px);
+        animation: r3 5s linear infinite; }
     .skill__contents .skill-detail {
       width: 100%;
       height: 200px;
@@ -309,3 +316,9 @@ input, select {
         height: 100px;
         background-color: #333;
         margin-bottom: 20px; }
+
+.skill-box {
+  width: 45vw;
+  height: 100px;
+  background-color: #333;
+  margin-bottom: 20px; }
