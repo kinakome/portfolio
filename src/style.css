@@ -258,7 +258,6 @@ input, select {
   .skill__contents {
     margin: 0 auto;
     width: 97%;
-    height: 100vh;
     background-color: #FFF; }
     .skill__contents .skill-type {
       position: relative;
@@ -270,6 +269,13 @@ input, select {
         left: calc(3% + 87px);
         color: #FFF;
         font-family: 'Source Sans Pro', sans-serif; }
+        .skill__contents .skill-type__title--other {
+          position: absolute;
+          font-size: 20px;
+          top: 70px;
+          left: calc(3% + 100px);
+          color: #FFF;
+          font-family: 'Source Sans Pro', sans-serif; }
       .skill__contents .skill-type__center-box {
         height: 90px;
         width: 90px;
@@ -306,7 +312,6 @@ input, select {
         animation: r3 5s linear infinite; }
     .skill__contents .skill-detail {
       width: 100%;
-      height: 200px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
@@ -330,6 +335,10 @@ input, select {
     height: 70px;
     width: 70px;
     float: left; }
+    .skill-box__left img {
+      margin: 15px;
+      height: 40px;
+      width: 40px; }
   .skill-box__right {
     float: right;
     width: calc(100% - 90px);
@@ -350,4 +359,10 @@ input, select {
       height: 25px;
       margin: 30px 0px 0px 4%;
       border-radius: 30px;
-      background-color: #FFF; }
+      background-color: #FFF;
+      overflow: hidden; }
+    .skill-box__right--length {
+      height: 25px;
+      border-radius: 30px;
+      background-color: #505050;
+      opacity: 0.8; }
