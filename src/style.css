@@ -319,6 +319,12 @@ input, select {
 
 .skill-box {
   width: 45vw;
-  height: 100px;
+  height: 90px;
   background-color: #333;
   margin-bottom: 20px; }
+  .skill-box__left {
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #FFF;
+    height: 70px;
+    width: 70px; }
