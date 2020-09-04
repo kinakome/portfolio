@@ -35,8 +35,8 @@ const Skill: React.FC<Props> = () => {
             <span className="skill-type__title">Frontend</span>
           </div>
           <div className="skill-detail">
-            <SkillBox name="" period="" icon="" />
-            <SkillBox name="" period="" icon=""  />
+            <SkillBox name="HTML CSS" period="4 years" icon="" />
+            <SkillBox name="Sass" period="3 years" icon=""  />
           </div>
         </div>
       </Reveal>

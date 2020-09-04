@@ -321,10 +321,33 @@ input, select {
   width: 45vw;
   height: 90px;
   background-color: #333;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  min-width: 300px; }
   .skill-box__left {
     margin: 10px;
     border-radius: 50%;
     background-color: #FFF;
     height: 70px;
-    width: 70px; }
+    width: 70px;
+    float: left; }
+  .skill-box__right {
+    float: right;
+    width: calc(100% - 90px);
+    margin-top: 10px;
+    color: #FFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600; }
+    .skill-box__right--name {
+      float: left;
+      display: inline-block;
+      margin-left: 10px; }
+    .skill-box__right--period {
+      float: right;
+      display: inline-block;
+      margin-right: 20px; }
+    .skill-box__right--chart {
+      width: 90%;
+      height: 25px;
+      margin: 30px 0px 0px 4%;
+      border-radius: 30px;
+      background-color: #FFF; }

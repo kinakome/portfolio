@@ -17,7 +17,11 @@ const SkillBox: React.FC<Props> = ({name, period, icon}) => {
   return (
     <div className="skill-box">
       <div className="skill-box__left">
-
+      </div>
+      <div className="skill-box__right">
+        <div className="skill-box__right--name">{name}</div>
+        <div className="skill-box__right--period">{period}</div> 
+        <div className="skill-box__right--chart"></div>
       </div>
     </div>
   )
