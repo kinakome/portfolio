@@ -18,6 +18,11 @@ import ReactI from '../images/skills/react.svg'
 import Sass from '../images/skills/sass.svg'
 import Typescript from '../images/skills/typescript.svg'
 import Vue from '../images/skills/vue.svg'
+import Illustrator from '../images/skills/illustrator.svg'
+import Xd from '../images/skills/xd.svg'
+import Java from '../images/skills/java.svg'
+
+
 
 
 
@@ -69,11 +74,13 @@ const Skill: React.FC<Props> = () => {
             <SkillBox name="Ruby on Rails" period="1.3 years" icon={Rails} width="50%" />
             <SkillBox name="Node.js Express" period="1 years" icon={Node} width="40%" />
             <SkillBox name="C# .NET" period="8 month" icon={CSharp} width="30%" />
+            <SkillBox name="Java" period="6 month" icon={Java} width="25%" />
             <SkillBox name="Azure" period="6 month" icon={Azure} width="25%" />
             <SkillBox name="Kubernetes" period="3 month" icon={Kubernetes} width="15%" />
             <SkillBox name="CircleCI" period="3 month" icon={CircleCI} width="15%" />
             <SkillBox name="Firebase" period="3 month" icon={Firebase} width="15%" />
-            <SkillBox name="" period="2 month" icon={Typescript} width="90%" />
+            <SkillBox name="illustrator" period="2 year" icon={Illustrator} width="50%" />
+            <SkillBox name="adobe Xd" period="6 month" icon={Xd} width="30%" />
           </div>
         </div>
       {/* </Reveal> */}
