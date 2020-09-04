@@ -1,0 +1,53 @@
+.skill-box{
+  width: 45vw;
+  height: 90px;
+  background-color: $black;
+  margin-bottom: 20px;
+  min-width: 300px;
+  &__left{
+    margin: 10px;
+    border-radius: 50%;
+    background-color: $white;
+    height: 70px;
+    width: 70px;
+    float: left;
+    img{
+      margin: 15px;
+      height: 40px;
+      width: 40px;
+    }
+  }
+  &__right{
+    float: right;
+    width: calc(100% - 90px);
+    margin-top: 10px;
+    color: $white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    &--name{
+      float: left;
+      display: inline-block;
+      margin-left: 10px;
+    }
+    &--period{     
+      float: right; 
+      display: inline-block;
+      margin-right: 20px;
+    }
+    &--chart{
+      width: 90%;
+      height: 25px;
+      margin: 30px 0px 0px 4%;
+      border-radius: 30px;
+      background-color: $white;
+      overflow: hidden;
+    }
+    &--length{
+      // width: 90%;
+      height: 25px;
+      border-radius: 30px;
+      background-color: $gray;
+      opacity: 0.7;
+    }
+  }
+}

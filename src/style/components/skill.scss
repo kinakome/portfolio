@@ -1,0 +1,102 @@
+.skill{
+  margin-top: 50px;
+  // height: 100vh;
+  width: 100vw;
+  padding-top: 70px;
+  &__header{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    &--line{
+      position: absolute;
+      top: 40px;
+      width: 45%;
+      border-bottom:3px $white solid;
+    }
+    &--title{
+      font-size: 30px;
+      color: $white;
+      margin-left: 10px;
+      font-family: 'Source Sans Pro', sans-serif;
+      padding-top: 28px;
+      text-align: center;
+    }
+  }
+  &__contents{
+    margin: 0 auto;
+    width: 97%;
+    // height: 100vh;
+    background-color: $white;
+    .skill-type{
+      position: relative;
+      height: 160px;
+      &__title{
+        position: absolute;
+        font-size: 20px;
+        top: 70px;
+        left: calc(3% + 87px);
+        color: $white;
+        font-family: 'Source Sans Pro', sans-serif;
+        &--other{
+          position: absolute;
+          font-size: 20px;
+          top: 70px;
+          left: calc(3% + 100px);
+          color: $white;
+          font-family: 'Source Sans Pro', sans-serif;       
+        }
+      }
+      &__center-box{
+        height: 90px;
+        width: 90px;
+        background-color: $black;   
+        display: inline-block;  
+        transform: rotate(45deg);
+        position: absolute;
+        top: 35px;
+        left: calc(3% + 80px);
+      }
+      &__side-box{
+        @keyframes vertical {
+          0% { transform:translateY(-10px); }
+          100% { transform:translateY(  0px); }
+        }
+        &--left{
+          height: 40px;
+          width: 40px;
+          background-color: $lightRed;
+          display: inline-block;
+          transform: rotate(45deg);
+          position: absolute;
+          top: 60px;
+          left: 3%;
+          // animation: vertical 1s ease-in-out infinite alternate;  
+        }
+        &--right{
+          height: 40px;
+          width: 40px;
+          background-color: $lightBlue;
+          display: inline-block;
+          transform: rotate(45deg);
+          position: absolute;
+          top: 60px;
+          left: calc(3% + 210px);
+          animation: r3 5s linear infinite ;
+        }
+      }
+    }
+    .skill-detail{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: flex-start;
+      &__box{
+        width: 45vw;
+        height: 100px;
+        background-color: $black;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

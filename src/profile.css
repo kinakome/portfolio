@@ -1,0 +1,28 @@
+.profile {
+  padding: 30px 3%;
+  height: 100%;
+  width: 100%; }
+  .profile__icon {
+    width: 120px;
+    float: left; }
+    .profile__icon img {
+      height: 100px;
+      width: 100px; }
+    .profile__icon--title {
+      margin: 5px 7px;
+      font-size: 22px;
+      font-family: 'Josefin Sans', 'Semi-bold'; }
+  .profile__contents {
+    width: calc(100% - 125px - 4%);
+    margin-left: 4%;
+    padding: 10px;
+    float: right;
+    font-family: 'Noto Sans JP', sans-serif; }
+    .profile__contents--name {
+      font-size: 25px; }
+    .profile__contents--age {
+      margin-top: 15px;
+      font-size: 18px; }
+    .profile__contents--history {
+      margin-top: 10px;
+      line-height: 25px; }
