@@ -30,7 +30,15 @@ const Header: React.FC<Props> = () => {
           >
             <li>Skill</li>
           </Link>
-          <li>Works</li>
+          <Link
+            activeClass="active"
+            to="works"
+            spy={true}
+            smooth={true}
+            duration= {800}
+          >
+            <li>Works</li>
+          </Link>
         </ul>
       </div>
     </div>
