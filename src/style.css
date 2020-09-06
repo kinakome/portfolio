@@ -95,7 +95,7 @@ input, select {
   background-color: #333; }
 
 .entrance {
-  height: calc(100vh + 150px);
+  height: calc(100vh + 200px);
   width: 100vw;
   background-color: #000000;
   position: relative; }
@@ -121,7 +121,7 @@ input, select {
       object-fit: contain; }
     .entrance__contents--button {
       position: absolute;
-      bottom: calc(150px + 10%);
+      bottom: calc(150px + 13%);
       left: calc(50% - 53px);
       width: 100px;
       object-fit: cover;
@@ -129,7 +129,7 @@ input, select {
       .entrance__contents--button:hover {
         opacity: 0.7; }
   .entrance__bottom {
-    height: 150px;
+    height: 200px;
     width: 100%;
     background: black;
     background: linear-gradient(180deg, black 0%, #1a1a1a 52%, #333333 100%); }

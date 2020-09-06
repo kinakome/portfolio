@@ -1,5 +1,5 @@
 .entrance{
-  height: calc(100vh + 150px);
+  height: calc(100vh + 200px);
   width: 100vw;
   background-color: $darkBlack;
   position: relative;
@@ -28,7 +28,7 @@
     }
     &--button{
       position: absolute;
-      bottom: calc(150px + 10%);
+      bottom: calc(150px + 13%);
       left: calc(50% - 53px);
       width: 100px;
       object-fit: cover;
@@ -40,7 +40,7 @@
     }
   }
   &__bottom{
-    height: 150px;
+    height: 200px;
     width: 100%;
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(26,26,26,1) 52%, rgba(51,51,51,1) 100%);
