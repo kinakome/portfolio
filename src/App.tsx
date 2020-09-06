@@ -17,9 +17,9 @@ const App: React.FC = () => {
   return (
     <div className="wrapper">
       <ReactGenieAnimations />
-      <Header />
       <Entrance /> 
       <Top />
+      <Header />
       <Skill />
       <Works />
 

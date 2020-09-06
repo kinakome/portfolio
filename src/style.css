@@ -95,55 +95,44 @@ input, select {
   background-color: #333; }
 
 .entrance {
-  height: 100vh;
+  height: calc(100vh + 150px);
   width: 100vw;
-  background-color: #333;
-  margin: 0px 0px 90px 0px; }
-  .entrance__left {
-    width: calc(50% - 120px);
-    height: 100%;
-    float: left;
-    padding: 10% 10%; }
-    .entrance__left img {
-      height: 100%;
-      width: 100%; }
-  .entrance__center {
-    width: 240px;
-    height: 100%;
-    float: left;
-    color: #FFF;
-    text-align: center;
-    font-family: 'Source Sans Pro', sans-serif; }
-    .entrance__center--title {
-      padding-top: 90%;
-      font-size: 70px;
-      height: 40%; }
-    .entrance__center--line {
-      margin-top: 15px;
-      border-top: #FFF 3px solid;
-      width: 60%;
-      margin-left: 20%;
-      height: 5%; }
-    .entrance__center--button {
-      margin: 0 auto;
-      margin-top: 70%; }
-      .entrance__center--button button {
-        bottom: 50px;
-        background-color: #333;
-        border: #FFF 2px solid;
-        color: #FFF;
-        font-size: 15px;
-        border-radius: 5px;
-        padding: 3px 5px 5px 5px;
-        font-family: 'Source Sans Pro', sans-serif; }
-  .entrance__right {
-    width: calc(50% - 120px);
-    height: 100%;
-    float: left;
-    padding: 10% 10%; }
-    .entrance__right img {
-      height: 90%;
-      width: 90%; }
+  background-color: #000000;
+  position: relative; }
+  .entrance__contents {
+    height: 100vh;
+    width: 100vw; }
+    .entrance__contents--background {
+      height: 100vh;
+      width: 100vw;
+      object-fit: cover; }
+    .entrance__contents--logo {
+      position: absolute;
+      top: 70px;
+      left: 10px;
+      height: 150px;
+      width: 150px; }
+    .entrance__contents--title {
+      position: absolute;
+      width: 450px;
+      height: 300px;
+      top: calc(50vh - 210px);
+      left: calc(50vw - 225px);
+      object-fit: contain; }
+    .entrance__contents--button {
+      position: absolute;
+      bottom: calc(150px + 10%);
+      left: calc(50% - 53px);
+      width: 100px;
+      object-fit: cover;
+      transition: .3s; }
+      .entrance__contents--button:hover {
+        opacity: 0.7; }
+  .entrance__bottom {
+    height: 150px;
+    width: 100%;
+    background: black;
+    background: linear-gradient(180deg, black 0%, #1a1a1a 52%, #333333 100%); }
 
 .top {
   height: calc(100vh + 100px);

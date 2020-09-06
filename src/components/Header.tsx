@@ -1,5 +1,4 @@
 import React from 'react'
-import { ProfileIcon, SkillIcon } from './SvgReader'
 import { Link } from 'react-scroll';
 
 type Props = {

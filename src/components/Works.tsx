@@ -12,7 +12,7 @@ const Works: React.FC = () => {
     <div className="works">
       <div className="works__header">
         <Reveal delay={lineTime} animation={Animation.SlideInLeft}>
-          <div className="works__header--left-line"></div>
+          <div className="works__header--line"></div>
         </Reveal>
         <Reveal delay={centerTime} animation={Animation.FadeIn}>
           <div className="works__header--center">
