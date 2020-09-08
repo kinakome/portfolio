@@ -33,7 +33,7 @@ export const Title: React.FC = () => {
 
 export const Button: React.FC = () => {
   return (
-  <img src={ButtonSvg}  alt="button" className="entrance__contents--button"/>)
+  <img src={ButtonSvg}  alt="button" className="entrance__contents--button hover-elm"/>)
 }
 
 export const PortfolioIcon: React.FC = () => {

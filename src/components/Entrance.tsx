@@ -29,7 +29,6 @@ const Entrance: React.FC<Props> = () => {
         </Link>
       </div>
       <div className="entrance__bottom">
-
       </div>
     </div>
   )
