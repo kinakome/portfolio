@@ -1,7 +1,7 @@
 .works{
   width: 100%;
   height: 100vh;
-  padding-top: 80px;
+  padding-top: 10px;
   &__header{
     width: 100%;
     position: relative;
@@ -32,7 +32,8 @@
   }
   &__contents{
     width: 100%;
-    height: 100vh;
+    height: 2000px;
+    overflow: scroll;
     background-color: $white;
     margin-top: 10px;
     display: flex;

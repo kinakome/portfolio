@@ -1,8 +1,9 @@
 .skill{
-  margin-top: 50px;
+  margin-top: 10px;
   // height: 100vh;
   width: 100vw;
-  padding-top: 70px;
+  // padding-top: 70px;
+  margin-bottom: 100px;
   &__header{
     position: relative;
     width: 100%;
@@ -25,8 +26,8 @@
   &__contents{
     margin: 0 auto;
     width: 97%;
-    // height: 100vh;
     background-color: $white;
+    padding-bottom: 100px;
     .skill-type{
       position: relative;
       height: 160px;
@@ -91,6 +92,35 @@
         height: 100px;
         background-color: $black;
         margin-bottom: 20px;
+      }
+    }
+  }
+  &__button{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: $black;
+    animation: vertical 1s ease-in-out infinite alternate;  
+    top: 0;
+    margin: 10% calc(50% - 25px) 0 calc(50% - 25px);
+    transition: .3s;
+    &:hover{
+      opacity: 0.7;
+    }
+
+    &--arrow{
+      position: relative;
+      &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 14px;
+        right: 7px;
+        width: 14px;
+        height: 14px;
+        border-top: 4px solid $white;
+        border-right: 4px solid $white;
+        transform: translateX(-50%) rotate(135deg);
       }
     }
   }

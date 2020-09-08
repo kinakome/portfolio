@@ -7,7 +7,7 @@ import { DnIcon, PortfolioIcon, BplusIcon, IllustChatIcon, TameruIcon, OtherIcon
 const Works: React.FC = () => {
   const lineTime = 700
   const centerTime = 1300
-  const titleTime = 1700
+  const titleTime = 1500
   const workTime = 200
 
 

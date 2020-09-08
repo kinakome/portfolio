@@ -249,12 +249,12 @@ input, select {
 .header {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 400px;
   height: 70px;
   background-color: #FFF;
   z-index: 100;
   opacity: 0.8;
-  box-shadow: 0 0 5px #D2D2D2;
+  box-shadow: 0 0 5px #a5a5a5;
   font-family: 'Josefin Sans', 'Semi-bold';
   right: 0; }
   .header__menu--list {
@@ -264,12 +264,15 @@ input, select {
     .header__menu--list li {
       float: left;
       margin-left: 50px;
-      font-size: 25px; }
+      font-size: 25px;
+      transition: .3s; }
+      .header__menu--list li:hover {
+        opacity: 0.6; }
 
 .skill {
-  margin-top: 50px;
+  margin-top: 10px;
   width: 100vw;
-  padding-top: 70px; }
+  margin-bottom: 100px; }
   .skill__header {
     position: relative;
     width: 100%;
@@ -289,7 +292,8 @@ input, select {
   .skill__contents {
     margin: 0 auto;
     width: 97%;
-    background-color: #FFF; }
+    background-color: #FFF;
+    padding-bottom: 100px; }
     .skill__contents .skill-type {
       position: relative;
       height: 160px; }
@@ -346,6 +350,30 @@ input, select {
         height: 100px;
         background-color: #333;
         margin-bottom: 20px; }
+  .skill__button {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: #333;
+    animation: vertical 1s ease-in-out infinite alternate;
+    top: 0;
+    margin: 10% calc(50% - 25px) 0 calc(50% - 25px);
+    transition: .3s; }
+    .skill__button:hover {
+      opacity: 0.7; }
+    .skill__button--arrow {
+      position: relative; }
+      .skill__button--arrow::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 14px;
+        right: 7px;
+        width: 14px;
+        height: 14px;
+        border-top: 4px solid #FFF;
+        border-right: 4px solid #FFF;
+        transform: translateX(-50%) rotate(135deg); }
 
 .skill-box {
   width: 45vw;
@@ -395,7 +423,7 @@ input, select {
 .works {
   width: 100%;
   height: 100vh;
-  padding-top: 80px; }
+  padding-top: 10px; }
   .works__header {
     width: 100%;
     position: relative; }
@@ -422,7 +450,8 @@ input, select {
       left: 12px; }
   .works__contents {
     width: 100%;
-    height: 100vh;
+    height: 2000px;
+    overflow: scroll;
     background-color: #FFF;
     margin-top: 10px;
     display: flex;
