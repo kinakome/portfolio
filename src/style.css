@@ -93,35 +93,45 @@ input, select {
 
 .wrapper {
   background-color: #333;
-  position: relative; }
-  .wrapper #cursol__inner {
-    pointer-events: none;
+  position: relative;
+  cursor: none; }
+  .wrapper #cursol {
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
     position: fixed;
-    top: -15px;
-    left: -15px;
-    width: 30px;
-    height: 30px;
-    border: #333 2px solid;
     border-radius: 50%;
-    transition: transform 0.2s, top, 0.2s, left 0.2s, width .2s, height .2s, background-color .5s;
-    transition-timing-function: ease-out;
-    z-index: 1000; }
-  .wrapper #cursol__outside {
-    pointer-events: none;
-    position: fixed;
-    top: -20px;
-    left: -20px;
-    width: 40px;
-    height: 40px;
-    border: #FFF 2px solid;
-    border-radius: 50%;
-    transition: transform 0.2s, top, 0.2s, left 0.2s, width .2s, height .2s, background-color .5s;
-    transition-timing-function: ease-out;
-    z-index: 1000; }
+    z-index: 1001;
+    border: solid 2px #FFF;
+    pointer-events: none; }
+    .wrapper #cursol__inner {
+      pointer-events: none;
+      position: fixed;
+      top: -15px;
+      left: -15px;
+      width: 30px;
+      height: 30px;
+      border: #333 2px solid;
+      border-radius: 50%;
+      transition: transform 0.2s, top, 0.2s, left 0.2s, width .2s, height .2s, background-color .5s;
+      transition-timing-function: ease-out;
+      z-index: 1000; }
+    .wrapper #cursol__outside {
+      pointer-events: none;
+      position: fixed;
+      top: -20px;
+      left: -20px;
+      width: 40px;
+      height: 40px;
+      border: #FFF 2px solid;
+      border-radius: 50%;
+      transition: transform 0.2s, top, 0.2s, left 0.2s, width .2s, height .2s, background-color .5s;
+      transition-timing-function: ease-out;
+      z-index: 1000; }
 
 .hov_ {
-  transition: .1s;
-  opacity: 0.3; }
+  opacity: 0.7;
+  background-color: #000000; }
 
 .entrance {
   height: calc(100vh + 200px);
@@ -306,12 +316,6 @@ input, select {
         position: absolute;
         top: 35px;
         left: calc(3% + 80px); }
-
-@keyframes vertical {
-  0% {
-    transform: translateY(-10px); }
-  100% {
-    transform: translateY(0px); } }
       .skill__contents .skill-type__side-box--left {
         height: 40px;
         width: 40px;
@@ -427,4 +431,7 @@ input, select {
     align-content: flex-start; }
     .works__contents .work img {
       width: 35vw;
-      margin: 40px 5vw 0px 5vw; }
+      margin: 40px 5vw 0px 5vw;
+      transition: 0.3s; }
+      .works__contents .work img:hover {
+        opacity: 0.8; }

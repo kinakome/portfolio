@@ -57,10 +57,6 @@
         left: calc(3% + 80px);
       }
       &__side-box{
-        @keyframes vertical {
-          0% { transform:translateY(-10px); }
-          100% { transform:translateY(  0px); }
-        }
         &--left{
           height: 40px;
           width: 40px;
@@ -70,7 +66,6 @@
           position: absolute;
           top: 60px;
           left: 3%;
-          // animation: vertical 1s ease-in-out infinite alternate;  
         }
         &--right{
           height: 40px;

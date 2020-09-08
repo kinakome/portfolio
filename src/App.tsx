@@ -14,8 +14,10 @@ const App: React.FC = () => {
 
     const cursolInner = document.getElementById('cursol__inner');
     const cursolOut = document.getElementById('cursol__outside');
+    const cursol = document.getElementById('cursol');
 
     document.addEventListener('mousemove', function (e) {
+      cursol!.style.transform = 'translate(' + (e.clientX - 4.5) + 'px, ' + (e.clientY  - 4.5) + 'px)';
       cursolInner!.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
       cursolOut!.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
     });
@@ -37,7 +39,8 @@ const App: React.FC = () => {
   });
   
   return (
-    <div className="wrapper">     
+    <div className="wrapper"> 
+      <div id="cursol"></div>    
       <div id="cursol__inner"></div>
       <div id="cursol__outside"></div>
       <ReactGenieAnimations />

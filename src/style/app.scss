@@ -1,7 +1,16 @@
 .wrapper{
   background-color: $black;
   position: relative;
+  cursor: none;
   #cursol {
+    width: 10px;
+    height: 10px;
+    background-color: $darkBlack;
+    position: fixed;
+    border-radius: 50%;
+    z-index: 1001;
+    border: solid 2px $white;
+    pointer-events: none;
     &__inner{
       pointer-events: none;
       position: fixed;
@@ -32,7 +41,6 @@
 }
 
 .hov_{
-
-  transition: .1s;
-  opacity: 0.3;
+  opacity: 0.7;
+  background-color: $darkBlack;
 }
