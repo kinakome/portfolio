@@ -113,7 +113,7 @@ input, select {
       height: 30px;
       border: #333 2px solid;
       border-radius: 50%;
-      transition: transform 0.2s, top, 0.2s, left 0.2s, width .2s, height .2s, background-color .5s;
+      transition: transform 0.1s, top, 0.1s, left 0.1s, width 0.1s, height 0.1s, background-color .5s;
       transition-timing-function: ease-out;
       z-index: 1000; }
     .wrapper #cursol__outside {
@@ -125,7 +125,7 @@ input, select {
       height: 40px;
       border: #FFF 2px solid;
       border-radius: 50%;
-      transition: transform 0.2s, top, 0.2s, left 0.2s, width .2s, height .2s, background-color .5s;
+      transition: transform 0.1s, top, 0.1s, left 0.1s, width 0.1s, height 0.1s, background-color .5s;
       transition-timing-function: ease-out;
       z-index: 1000; }
 
@@ -147,7 +147,7 @@ input, select {
       object-fit: cover; }
     .entrance__contents--logo {
       position: absolute;
-      top: 70px;
+      top: 10px;
       left: 10px;
       height: 150px;
       width: 150px; }
@@ -215,6 +215,23 @@ input, select {
       font-size: 18px;
       line-height: 33px;
       color: #5e5e5e; }
+    .top__contents--link {
+      margin-top: 30px; }
+      .top__contents--link a:visited {
+        color: #333; }
+      .top__contents--link .icon {
+        height: 70px; }
+        .top__contents--link .icon svg {
+          float: left;
+          transition: 0.3s;
+          color: #333; }
+          .top__contents--link .icon svg:hover {
+            opacity: 0.6; }
+        .top__contents--link .icon p {
+          float: left;
+          line-height: 70px;
+          vertical-align: middle;
+          text-align: center; }
   .top__button {
     border-radius: 50%;
     height: 50px;

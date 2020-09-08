@@ -49,6 +49,32 @@
       line-height: 33px;
       color: $lightBlack;
     }
+    &--link{
+      margin-top: 30px;
+      a{
+        &:visited{
+          color: $black;
+        }
+      }
+      .icon{
+        height: 70px;
+        svg{
+          float: left;
+          transition: 0.3s;
+          color: $black;
+          &:hover{
+            opacity: 0.6;
+          }
+        }
+        p{
+          float: left;
+          // margin: 20px;
+          line-height: 70px;
+          vertical-align: middle;
+          text-align: center;
+        }
+      }
+    }
   }
   &__button{
     border-radius: 50%;
