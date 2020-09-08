@@ -106,13 +106,6 @@ input, select {
     transition: transform 0.2s, top, 0.2s, left 0.2s, width .2s, height .2s, background-color .5s;
     transition-timing-function: ease-out;
     z-index: 1000; }
-    .wrapper #cursol__inner--hov {
-      top: -32px;
-      left: -32px;
-      width: 64px;
-      height: 64px;
-      transition: .3s;
-      border: #FFF 2px solid; }
   .wrapper #cursol__outside {
     pointer-events: none;
     position: fixed;
@@ -125,13 +118,10 @@ input, select {
     transition: transform 0.2s, top, 0.2s, left 0.2s, width .2s, height .2s, background-color .5s;
     transition-timing-function: ease-out;
     z-index: 1000; }
-    .wrapper #cursol__outside--hov {
-      top: -32px;
-      left: -32px;
-      width: 64px;
-      height: 64px;
-      transition: .3s;
-      border: #FFF 2px solid; }
+
+.hov_ {
+  transition: .1s;
+  opacity: 0.3; }
 
 .entrance {
   height: calc(100vh + 200px);
@@ -222,7 +212,10 @@ input, select {
     background-color: #333;
     animation: vertical 1s ease-in-out infinite alternate;
     top: 0;
-    margin: 10% calc(50% - 25px); }
+    margin: 10% calc(50% - 25px);
+    transition: .3s; }
+    .top__button:hover {
+      opacity: 0.7; }
     .top__button--arrow {
       position: relative; }
       .top__button--arrow::before {
@@ -434,4 +427,4 @@ input, select {
     align-content: flex-start; }
     .works__contents .work img {
       width: 35vw;
-      margin: 50px 5vw 0px 5vw; }
+      margin: 40px 5vw 0px 5vw; }

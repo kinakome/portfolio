@@ -38,30 +38,30 @@ export const Button: React.FC = () => {
 
 export const PortfolioIcon: React.FC = () => {
   return (
-  <img src={Portfolio}  alt="portfolio" />)
+  <img src={Portfolio}  alt="portfolio" className="hover-elm" />)
 }
 
 export const BplusIcon: React.FC = () => {
   return (
-  <img src={Bplus}  alt="bplus" />)
+  <img src={Bplus}  alt="bplus" className="hover-elm" />)
 }
 
 export const DnIcon: React.FC = () => {
   return (
-  <img src={Dn}  alt="dn" />)
+  <img src={Dn}  alt="dn" className="hover-elm" />)
 }
 
 export const IllustChatIcon: React.FC = () => {
   return (
-  <img src={IllustChat}  alt="illustChat" />)
+  <img src={IllustChat}  alt="illustChat" className="hover-elm" />)
 }
 
 export const TameruIcon: React.FC = () => {
   return (
-  <img src={Tameru}  alt="tameru" />)
+  <img src={Tameru}  alt="tameru" className="hover-elm" />)
 }
 
 export const OtherIcon: React.FC = () => {
   return (
-  <img src={Other}  alt="other" />)
+  <img src={Other}  alt="other" className="hover-elm" />)
 }

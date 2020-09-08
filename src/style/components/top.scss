@@ -58,6 +58,10 @@
     animation: vertical 1s ease-in-out infinite alternate;  
     top: 0;
     margin: 10% calc(50% - 25px);
+    transition: .3s;
+    &:hover{
+      opacity: 0.7;
+    }
 
     &--arrow{
       position: relative;

@@ -44,7 +44,7 @@ const Top: React.FC<Props> = () => {
                 smooth={true}
                 duration= {800}
               >
-            <div className="top__button">
+            <div className="top__button hover-elm">
               <div className="top__button--arrow"></div>
             </div>
           </Link>
