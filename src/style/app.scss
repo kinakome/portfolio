@@ -1,7 +1,12 @@
 .wrapper{
-  background-color: $black;
-  position: relative;
-  cursor: none;
+  background-color: $lightBlack;
+  &__contents{
+    background-color: $black;
+    position: relative;
+    cursor: none;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
   #cursol {
     width: 10px;
     height: 10px;

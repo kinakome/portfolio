@@ -1,14 +1,14 @@
 .entrance{
   height: calc(100vh + 200px);
-  width: 100vw;
+  width: 100%;
   background-color: $darkBlack;
   position: relative;
   &__contents{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     &--background{
       height: 100vh;
-      width: 100vw;
+      width: 100%;
       object-fit: cover;
     }
     &--logo{
@@ -23,7 +23,7 @@
       width: 450px;
       height: 300px;
       top: calc(50vh - 210px);
-      left: calc(50vw - 225px);
+      left: calc(50% - 225px);
       object-fit: contain;
     }
     &--button{

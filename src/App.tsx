@@ -43,13 +43,14 @@ const App: React.FC = () => {
       <div id="cursol"></div>    
       <div id="cursol__inner"></div>
       <div id="cursol__outside"></div>
-      <ReactGenieAnimations />
-      <Entrance /> 
-      <Top />
-      <Header />
-      <Skill />
-      <Works />
-
+      <div className="wrapper__contents"> 
+        <ReactGenieAnimations />
+        <Entrance /> 
+        <Top />
+        <Header />
+        <Skill />
+        <Works />
+      </div>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 .skill{
   margin-top: 10px;
-  width: 100vw;
+  width: 100%;
   margin-bottom: 100px;
   &__header{
     position: relative;
@@ -89,12 +89,6 @@
       flex-wrap: wrap;
       justify-content: space-around;
       align-content: flex-start;
-      &__box{
-        width: 45vw;
-        height: 100px;
-        background-color: $black;
-        margin-bottom: 20px;
-      }
     }
   }
   &__button{
