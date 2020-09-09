@@ -98,7 +98,8 @@ input, select {
     position: relative;
     cursor: none;
     max-width: 1500px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    overflow: hidden; }
   .wrapper #cursol {
     width: 10px;
     height: 10px;
@@ -138,7 +139,6 @@ input, select {
   background-color: #000000; }
 
 .entrance {
-  height: calc(100vh + 200px);
   width: 100%;
   background-color: #000000;
   position: relative; }
