@@ -2,12 +2,13 @@ import React from 'react'
 import { Reveal } from "react-genie";
 import { Animation } from "react-genie-styled-components";
 import { DnIcon, PortfolioIcon, BplusIcon, IllustChatIcon, TameruIcon, OtherIcon } from './SvgReader'
+import {Animated} from "react-animated-css";
 
 
 const Works: React.FC = () => {
   const lineTime = 700
   const centerTime = 1300
-  const titleTime = 1500
+  const titleTime = 1600
   const workTime = 200
 
 
@@ -29,6 +30,11 @@ const Works: React.FC = () => {
         <Reveal delay={workTime} animation={Animation.FadeInUp}>
           <div className="work">
             <DnIcon />
+            <div className="work__detail">
+              <div className="work__detail--title">Daily Necessities</div>
+              <div className="work__detail--explanation">現在地近辺のちょっと便利な情報を表示</div>
+              <div className="work__detail--tech"></div>
+            </div>  
           </div>
         </Reveal>
         <Reveal delay={workTime} animation={Animation.FadeInUp}>

@@ -273,7 +273,8 @@ input, select {
   opacity: 0.8;
   box-shadow: 0 0 5px #a5a5a5;
   font-family: 'Josefin Sans', 'Semi-bold';
-  right: 0; }
+  right: 0;
+  z-index: 200; }
   .header__menu--list {
     float: right;
     list-style: none;
@@ -293,7 +294,11 @@ input, select {
   .skill__header {
     position: relative;
     width: 100%;
-    height: 80px; }
+    height: 80px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color: #333; }
     .skill__header--line {
       position: absolute;
       top: 40px;
@@ -446,6 +451,7 @@ input, select {
     position: sticky;
     top: 0px;
     background-color: #333;
+    z-index: 100;
     padding: 5px; }
     .works__header--line {
       width: 100%;
@@ -471,16 +477,45 @@ input, select {
   .works__contents {
     width: 100%;
     height: 2000px;
-    overflow: scroll;
     background-color: #FFF;
     margin-top: 10px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
     align-content: flex-start; }
-    .works__contents .work img {
-      width: 35vw;
-      margin: 40px 5vw 0px 5vw;
-      transition: 0.3s; }
-      .works__contents .work img:hover {
-        opacity: 0.8; }
+    .works__contents .work {
+      padding: 5%; }
+      .works__contents .work img {
+        width: 35vw;
+        transition: 0.3s;
+        float: left; }
+        .works__contents .work img:hover {
+          opacity: 0.8; }
+      .works__contents .work__detail {
+        width: 55%;
+        height: 35vw;
+        float: right;
+        color: #333; }
+        .works__contents .work__detail--title {
+          font-family: 'Source Sans Pro', sans-serif;
+          font-size: 3vw;
+          text-align: center;
+          padding-bottom: 1vw;
+          border-bottom: 2px #333 solid;
+          width: 80%;
+          margin: 0 auto;
+          margin-bottom: 40px;
+          height: 11%; }
+        .works__contents .work__detail--explanation {
+          font-family: 'Noto Sans JP', sans-serif;
+          font-size: 2vw;
+          width: 90%;
+          margin: 0 auto;
+          text-align: center;
+          margin-bottom: 40px;
+          height: 20%; }
+        .works__contents .work__detail--tech {
+          height: 100px;
+          width: 95%;
+          border-left: 30px #333 solid;
+          margin: 0 auto;
+          text-align: center; }
