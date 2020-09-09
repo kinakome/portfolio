@@ -1,14 +1,15 @@
 .header{
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 400px;
   height: 70px;
   background-color: $white;
   z-index: 100;
   opacity: 0.8;
-  box-shadow: 0 0 5px #D2D2D2;
+  box-shadow: 0 0 5px rgb(165, 165, 165);
   font-family: 'Josefin Sans', 'Semi-bold';
   right: 0;
+  z-index: 200;
   &__menu{
     &--list{
       float: right;
@@ -18,6 +19,10 @@
         float: left;
         margin-left: 50px;
         font-size: 25px;
+        transition: .3s;
+        &:hover{
+          opacity: 0.6;
+        }
       }
     }
   }

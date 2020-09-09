@@ -20,10 +20,7 @@ import Vue from '../images/skills/vue.svg'
 import Illustrator from '../images/skills/illustrator.svg'
 import Xd from '../images/skills/xd.svg'
 import Java from '../images/skills/java.svg'
-
-
-
-
+import { Link } from 'react-scroll';
 
 type Props = {
 }
@@ -77,6 +74,17 @@ const Skill: React.FC<Props> = () => {
           <SkillBox name="illustrator" period="2 year" icon={Illustrator} width="50%" />
           <SkillBox name="adobe Xd" period="6 month" icon={Xd} width="30%" />
         </div>
+        <Link
+              activeClass="active"
+              to="works"
+              spy={true}
+              smooth={true}
+              duration= {800}
+            >
+          <div className="skill__button hover-elm">
+            <div className="skill__button--arrow"></div>
+          </div>
+        </Link>
       </div>
     </div>
   )

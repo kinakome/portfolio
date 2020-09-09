@@ -1,6 +1,6 @@
 .top{
   height: calc(100vh + 100px);
-  width: 100vw;
+  width: 100%;
   position: relative;
   &__left{
     width: 30%;
@@ -49,6 +49,32 @@
       line-height: 33px;
       color: $lightBlack;
     }
+    &--link{
+      margin-top: 30px;
+      a{
+        &:visited{
+          color: $black;
+        }
+      }
+      .icon{
+        height: 70px;
+        svg{
+          float: left;
+          transition: 0.3s;
+          color: $black;
+          &:hover{
+            opacity: 0.6;
+          }
+        }
+        p{
+          float: left;
+          // margin: 20px;
+          line-height: 70px;
+          vertical-align: middle;
+          text-align: center;
+        }
+      }
+    }
   }
   &__button{
     border-radius: 50%;
@@ -58,6 +84,10 @@
     animation: vertical 1s ease-in-out infinite alternate;  
     top: 0;
     margin: 10% calc(50% - 25px);
+    transition: .3s;
+    &:hover{
+      opacity: 0.7;
+    }
 
     &--arrow{
       position: relative;

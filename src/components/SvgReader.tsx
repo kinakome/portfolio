@@ -1,27 +1,19 @@
-import ProfileImg from '../images/profile.svg'
 import PCImg from '../images/pc.svg'
 import CameraImg from '../images/camera.svg'
-import SkillImg from '../images/skill-black.svg'
-import Azure from '../images/skills/azure.svg'
-import CSharp from '../images/skills/c-sharp.svg'
-import CircleCI from '../images/skills/circleci.svg'
-import Firebase from '../images/skills/firebase.svg'
-import Html from '../images/skills/html.svg'
-import Javascript from '../images/skills/javascript.svg'
-import Jquery from '../images/skills/jquery.svg'
-import Kubernetes from '../images/skills/kubernetes.svg'
-import Node from '../images/skills/nodejs.svg'
-import Nuxt from '../images/skills/nuxt.svg'
-import Rails from '../images/skills/rails.svg'
-import ReactI from '../images/skills/react.svg'
-import Sass from '../images/skills/sass.svg'
-import Typescript from '../images/skills/typescript.svg'
-import Vue from '../images/skills/vue.svg'
-import React from 'react'
+import LogoSvg from '../images/entrance/logo.svg'
+import TitleSvg from '../images/entrance/title.svg'
+import ButtonSvg from '../images/entrance/button.svg'
+import Dn from '../images/works/dn.svg'
+import Portfolio from '../images/works/portfolio.svg'
+import Bplus from '../images/works/b-plus.svg'
+import IllustChat from '../images/works/illustya.svg'
+import Tameru from '../images/works/tameru.svg'
+import Other from '../images/works/other.svg'
 
-export const ProfileIcon: React.FC = () => {
-  return <img src={ProfileImg}  alt="プロフィール" />
-}
+
+
+
+import React from 'react'
 
 export const PCIcon: React.FC = () => {
   return <img src={PCImg}  alt="camera" />
@@ -31,66 +23,45 @@ export const CameraIcon: React.FC = () => {
   return <img src={CameraImg}  alt="camera" />
 }
 
-export const SkillIcon: React.FC = () => {
-  return <img src={SkillImg}  alt="skill" />
+export const Logo: React.FC = () => {
+  return <img src={LogoSvg}  alt="logo"  className="entrance__contents--logo"/>
 }
 
-export const AzureIcon: React.FC = () => {
-  return <img src={Azure}  alt="azure" />
+export const Title: React.FC = () => {
+  return <img src={TitleSvg}  alt="title" className="entrance__contents--title"/>
 }
 
-export const CSharpIcon: React.FC = () => {
-  return <img src={CSharp}  alt="c#" />
+export const Button: React.FC = () => {
+  return (
+  <img src={ButtonSvg}  alt="button" className="entrance__contents--button hover-elm"/>)
 }
 
-export const CircleCiIcon: React.FC = () => {
-  return <img src={CircleCI}  alt="circleci" />
+export const PortfolioIcon: React.FC = () => {
+  return (
+  <img src={Portfolio}  alt="portfolio" className="hover-elm" />)
 }
 
-export const FirebaseIcon: React.FC = () => {
-  return <img src={Firebase}  alt="firebase" />
+export const BplusIcon: React.FC = () => {
+  return (
+  <img src={Bplus}  alt="bplus" className="hover-elm" />)
 }
 
-export const HtmlIcon: React.FC = () => {
-  return <img src={Html}  alt="html" />
+export const DnIcon: React.FC = () => {
+  return (
+  <img src={Dn}  alt="dn" className="hover-elm" />)
 }
 
-export const JavascriptIcon: React.FC = () => {
-  return <img src={Javascript}  alt="js" />
+export const IllustChatIcon: React.FC = () => {
+  return (
+  <img src={IllustChat}  alt="illustChat" className="hover-elm" />)
 }
 
-export const JqueryIcon: React.FC = () => {
-  return <img src={Jquery}  alt="jquery" />
+export const TameruIcon: React.FC = () => {
+  return (
+  <img src={Tameru}  alt="tameru" className="hover-elm" />)
 }
 
-export const KubernetesIcon: React.FC = () => {
-  return <img src={Kubernetes}  alt="kubernetes" />
-}
-
-export const NodeIcon: React.FC = () => {
-  return <img src={Node}  alt="node" />
-}
-
-export const NuxtIcon: React.FC = () => {
-  return <img src={Nuxt}  alt="nuxt" />
-}
-
-export const RailsIcon: React.FC = () => {
-  return <img src={Rails}  alt="rails" />
-}
-
-export const ReactIcon: React.FC = () => {
-  return <img src={ReactI}  alt="react" />
-}
-
-export const SassIcon: React.FC = () => {
-  return <img src={Sass}  alt="sass" />
-}
-
-export const TypescriptIcon: React.FC = () => {
-  return <img src={Typescript}  alt="ts" />
-}
-
-export const VueIcon: React.FC = () => {
-  return <img src={Vue}  alt="vue" />
+export const OtherIcon: React.FC = () => {
+  return (
+  <img src={Other}  alt="other" className="hover-elm" />)
 }

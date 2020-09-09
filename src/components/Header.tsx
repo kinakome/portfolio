@@ -1,6 +1,7 @@
 import React from 'react'
-import { ProfileIcon, SkillIcon } from './SvgReader'
 import { Link } from 'react-scroll';
+import { Reveal } from "react-genie";
+import { Animation } from "react-genie-styled-components";
 
 type Props = {
 
@@ -9,6 +10,7 @@ type Props = {
 const Header: React.FC<Props> = () => {
 
   return (
+    // <Reveal delay={700} animation={Animation.FadeIn}> 
     <div className="header">
       <div className="header__menu">
         <ul className="header__menu--list">
@@ -19,7 +21,7 @@ const Header: React.FC<Props> = () => {
               smooth={true}
               duration= {800}
             >
-            <li>Profile</li>
+            <li className="hover-elm">Profile</li>
           </Link>
           <Link
             activeClass="active"
@@ -28,12 +30,21 @@ const Header: React.FC<Props> = () => {
             smooth={true}
             duration= {800}
           >
-            <li>Skill</li>
+            <li className="hover-elm">Skill</li>
           </Link>
-          <li>Works</li>
+          <Link
+            activeClass="active"
+            to="works"
+            spy={true}
+            smooth={true}
+            duration= {800}
+          >
+            <li className="hover-elm">Works</li>
+          </Link>
         </ul>
       </div>
     </div>
+    // </Reveal>
   )
 }
 

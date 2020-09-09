@@ -1,0 +1,99 @@
+.works{
+  width: 100%;
+  padding-top: 10px;
+  &__header{
+    width: 100%;
+    position: relative;
+    position: sticky;
+    top: 0px;
+    background-color: $black;
+    z-index: 100;
+    padding: 5px;
+    &--line{
+      width: 100%;
+      border-bottom: 4px $white solid;
+      position: absolute;
+      top: 47px;
+      left: 0px;
+      display: inline-block;
+    }
+    &--center{
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      background-color: $white;
+      margin: 0 auto;
+      position: relative;
+    }
+    &--title{
+      color: $black;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 30px;
+      position: absolute;
+      top: 35px;
+      left: 12px;
+    }
+  }
+  &__contents{
+    width: 100%;
+    // overflow: scroll;
+    background-color: $white;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    // justify-content: space-around;
+    align-content: flex-start;
+    .work{
+      padding: 5%;
+      img{
+        width: 35%;
+        // margin: 40px 5vw 0px 5vw;
+        transition: 0.3s;
+        float: left;
+        &:hover{
+          opacity: 0.8;
+        }
+      }
+      &__detail{
+        width: 55%;
+        float: right;
+        // background-color: red;
+        color: $black;
+        &--title{
+          font-family: 'Source Sans Pro', sans-serif;
+          font-size: 3vw;
+          text-align: center;
+          padding-bottom: 2%;
+          border-bottom: 2px $black solid;
+          width: 80%;
+          margin: 0 auto;
+          margin-bottom: 3%;
+          height: 11%;
+        }
+        &--explanation{
+          font-family: 'Noto Sans JP', sans-serif;
+          font-size: 2vw;
+          line-height: 3vw;
+          width: 80%;
+          margin: 0 auto;
+          text-align: center;
+          margin-bottom: 40px;
+          height: 20%;
+          p{
+            margin-top: 10px;
+            font-size: 1.6vw;
+            color: $lightBlack;
+          }
+        }
+        &--tech{
+          height: 100px;
+          width: 95%;
+          border-left: 30px $black solid;
+          margin: 0 auto;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

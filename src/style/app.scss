@@ -1,3 +1,52 @@
 .wrapper{
-  background-color: $black;
+  background-color: $lightBlack;
+  &__contents{
+    background-color: $black;
+    position: relative;
+    cursor: none;
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  #cursol {
+    width: 10px;
+    height: 10px;
+    background-color: $darkBlack;
+    position: fixed;
+    border-radius: 50%;
+    z-index: 1001;
+    border: solid 2px $white;
+    pointer-events: none;
+    &__inner{
+      pointer-events: none;
+      position: fixed;
+      top: -15px;     
+      left: -15px;    
+      width: 30px;   
+      height: 30px;  
+      border: $black 2px solid;
+      border-radius: 50%;
+      transition: transform 0.1s, top, 0.1s, left 0.1s, width 0.1s, height 0.1s, background-color .5s;
+      transition-timing-function: ease-out;
+      z-index: 1000;
+    }
+    &__outside{
+      pointer-events: none;
+      position: fixed;
+      top: -20px;     
+      left: -20px;    
+      width: 40px;   
+      height: 40px;  
+      border: $white 2px solid;
+      border-radius: 50%;
+      transition: transform 0.1s, top, 0.1s, left 0.1s, width 0.1s, height 0.1s, background-color .5s;
+      transition-timing-function: ease-out;
+      z-index: 1000;
+    }
+  }
+}
+
+.hov_{
+  opacity: 0.7;
+  background-color: $darkBlack;
 }
