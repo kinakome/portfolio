@@ -6,7 +6,6 @@ Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300&display=swap");
 html, body, div, span, object, iframe,
@@ -93,6 +92,12 @@ input, select {
 
 .wrapper {
   background-color: #5e5e5e; }
+  .wrapper a {
+    transition: .3s; }
+    .wrapper a:visited {
+      color: #333; }
+    .wrapper a:hover {
+      opacity: 0.7; }
   .wrapper__contents {
     background-color: #333;
     position: relative;
@@ -495,6 +500,7 @@ input, select {
         color: #333; }
         .works__contents .work__detail--title {
           font-family: 'Source Sans Pro', sans-serif;
+          font-weight: bold;
           font-size: 3vw;
           text-align: center;
           padding-bottom: 2%;
@@ -510,15 +516,26 @@ input, select {
           width: 80%;
           margin: 0 auto;
           text-align: center;
-          margin-bottom: 40px;
-          height: 20%; }
+          margin-bottom: 20px; }
           .works__contents .work__detail--explanation p {
             margin-top: 10px;
             font-size: 1.6vw;
             color: #5e5e5e; }
         .works__contents .work__detail--tech {
-          height: 100px;
           width: 95%;
-          border-left: 30px #333 solid;
           margin: 0 auto;
-          text-align: center; }
+          text-align: center;
+          margin-bottom: 20px; }
+          .works__contents .work__detail--tech .tech--title {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: bold;
+            font-size: 1.7vw;
+            line-height: 2.5vw; }
+          .works__contents .work__detail--tech .tech--detail {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1.7vw;
+            line-height: 2.5vw; }
+        .works__contents .work__detail--link a {
+          display: block;
+          width: 50px;
+          margin: 0 auto; }

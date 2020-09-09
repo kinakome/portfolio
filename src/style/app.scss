@@ -1,5 +1,14 @@
 .wrapper{
   background-color: $lightBlack;
+  a{
+    transition: .3s;
+    &:visited{
+      color: $black;
+    }
+    &:hover{
+      opacity: 0.7;
+    }
+  }
   &__contents{
     background-color: $black;
     position: relative;
