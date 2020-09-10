@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Slideshow: React.FC = () => {
   const lineTime = 700
-  const setting = {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -15,25 +15,23 @@ const Slideshow: React.FC = () => {
 
   return (
     <div className="slide">
-      <Slider {...setting}>
-      <div>
-        <h3>2</h3>
-      </div>
-      <div>
-        <h3>3</h3>
-      </div>
-      <div>
-        <h3>4</h3>
-      </div>
-      <div>
-        <h3>5</h3>
-      </div>
-      <div>
-        <h3>6</h3>
-      </div>
-    </Slider>
-  );
-}
+      <Slider {...settings}>
+        <div className="slide__content">
+          <h3>2</h3>
+        </div>
+        <div className="slide__content">
+          <h3>3</h3>
+        </div>
+        <div className="slide__content">
+          <h3>4</h3>
+        </div>
+        <div className="slide__content">
+          <h3>5</h3>
+        </div>
+        <div className="slide__content">
+          <h3>6</h3>
+        </div>
+      </Slider>
     </div>
   )
 }

@@ -1,13 +1,17 @@
 .works{
   width: 100%;
   padding-top: 10px;
+  &__modal{
+    width: 90vw;
+    height: 90vh;
+    z-index: 300;
+  }
   &__header{
     width: 100%;
     position: relative;
     position: sticky;
     top: 0px;
     background-color: $black;
-    z-index: 100;
     padding: 5px;
     &--line{
       width: 100%;
@@ -119,16 +123,31 @@
           }
         }
         &--link{
-          a{
-            display: block;
-            width: 50px;
+          padding: 0 11%;
+          .icons{
             margin: 0 auto; 
+            width: 70px;
+            &--single{
+              width: 30px;
+            }
+            a{
+              display: block;
+              width: 30px;
+              display: inline-block;
+              svg{
+                padding: 5;
+                width: 30px;
+              }
+              margin-right: 10px;
+            }
             svg{
               padding: 5;
-              // height: 35px;
-              width: 3%px;
-              min-width: 35px;
-              min-height: 35px;
+              width: 30px;
+              height: 30px;
+              transition: .3s;
+              &:hover{
+                opacity: 0.7;
+              }
             }
           }
         }

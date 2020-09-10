@@ -4,12 +4,12 @@ import { Animation } from "react-genie-styled-components";
 import { DnIcon, PortfolioIcon, BplusIcon, IllustChatIcon, TameruIcon, OtherIcon } from './SvgReader'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { faExternalLinkAlt, faImages } from "@fortawesome/free-solid-svg-icons";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slideshow from './Slideshow'
-
+import Modal from 'react-modal'
 
 const Works: React.FC = () => {
   const lineTime = 700
@@ -17,9 +17,38 @@ const Works: React.FC = () => {
   const titleTime = 1600
   const workTime = 200
   const iconStyle: React.CSSProperties = {  };
+  const customStyles = {
+    content : {
+      top                   : '50%',
+      left                  : '50%',
+      right                 : 'auto',
+      bottom                : 'auto',
+      marginRight           : '-50%',
+      transform             : 'translate(-50%, -50%)'
+    }
+  };  
+  const [modalIsOpen,setIsOpen] = React.useState(false);
+  const openModal = ()  => {
+      setIsOpen(true);
+  }
+
+  const closeModal = () => {
+      setIsOpen(false);
+  }
 
   return (
     <div className="works">
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <div className="works__modal">
+          <button className="mr-2" onClick={closeModal}>close</button>
+          {/* <Slideshow /> */}
+        </div>
+      </Modal> 
       <div className="works__header">
         <Reveal delay={lineTime} animation={Animation.SlideInLeft}>
           <div className="works__header--line"></div>
@@ -51,12 +80,12 @@ const Works: React.FC = () => {
                   </div>
                 </div>
                 <div className="work__detail--link">
-                  {/* <a href="https://github.com/kinakome" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon style={iconStyle} icon={faGithubSquare} className="hover-elm" />
-                  </a> */}
-                  <a href="https://daily-necessities-4adfb.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon style={iconStyle} icon={faExternalLinkAlt} className="hover-elm" />
-                  </a>
+                  <div className="icons">
+                    <a href="https://daily-necessities-4adfb.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
+                      <FontAwesomeIcon style={iconStyle} icon={faExternalLinkAlt} className="hover-elm" />
+                    </a>
+                    <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={openModal} />
+                  </div>
                 </div>
               </div>  
             {/* </Reveal> */}
@@ -80,9 +109,12 @@ const Works: React.FC = () => {
                   </div>
                 </div>
                 <div className="work__detail--link">
-                  <a href="https://github.com/kinakome/portfolio" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon style={iconStyle} icon={faGithubSquare} className="hover-elm" />
-                  </a>
+                  <div className="icons">
+                    <a href="https://github.com/kinakome/portfolio" target="_blank" rel="noopener noreferrer">
+                      <FontAwesomeIcon style={iconStyle} icon={faGithubSquare} className="hover-elm" />
+                    </a>
+                    <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={openModal}/>
+                  </div>
                 </div>
               </div>  
             {/* </Reveal> */}
@@ -110,9 +142,12 @@ const Works: React.FC = () => {
                   </div>
                 </div>
                 <div className="work__detail--link">
-                  <a href="https://github.com/kinakome/illustya" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon style={iconStyle} icon={faGithubSquare} className="hover-elm" />
-                  </a>
+                  <div className="icons">
+                    <a href="https://github.com/kinakome/illustya" target="_blank" rel="noopener noreferrer">
+                      <FontAwesomeIcon style={iconStyle} icon={faGithubSquare} className="hover-elm" />
+                    </a>
+                    <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={openModal} />
+                  </div>
                 </div>
               </div>  
             {/* </Reveal> */}
@@ -139,6 +174,11 @@ const Works: React.FC = () => {
                     <div className="tech__detail">heroku</div>
                   </div>
                 </div>
+                <div className="work__detail--link">
+                  <div className="icons icons--single">
+                    <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={openModal} />
+                  </div>
+                </div>
               </div>  
             {/* </Reveal> */}
           </div>
@@ -158,6 +198,11 @@ const Works: React.FC = () => {
                     <div className="tech__title--tameru">Frontend・Backend</div>
                       <div className="tech__detail">Flutter</div>
                     </div>
+                  </div>
+                </div>
+                <div className="work__detail--link">
+                  <div className="icons icons--single">
+                    <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={openModal} />
                   </div>
                 </div>
               </div>
