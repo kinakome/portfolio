@@ -1,5 +1,5 @@
 .top{
-  height: calc(100vh + 100px);
+  min-height: calc(100vh + 200px);
   width: 100%;
   position: relative;
   &__left{
@@ -25,7 +25,7 @@
   }
   &__right{
     width: 70%;
-    height: 100vh;
+    min-height: 100vh;
     background: $white;
     float: right;
     padding-top: 100px;
@@ -82,7 +82,7 @@
     width: 50px;
     background-color: $black;
     animation: vertical 1s ease-in-out infinite alternate;  
-    top: 0;
+    // top: 0;
     margin: 10% calc(50% - 25px);
     transition: .3s;
     &:hover{

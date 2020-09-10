@@ -183,7 +183,7 @@ input, select {
     background: linear-gradient(180deg, black 0%, #1a1a1a 52%, #333333 100%); }
 
 .top {
-  height: calc(100vh + 100px);
+  min-height: calc(100vh + 200px);
   width: 100%;
   position: relative; }
   .top__left {
@@ -204,7 +204,7 @@ input, select {
       left: 35%; }
   .top__right {
     width: 70%;
-    height: 100vh;
+    min-height: 100vh;
     background: #FFF;
     float: right;
     padding-top: 100px;
@@ -247,7 +247,6 @@ input, select {
     width: 50px;
     background-color: #333;
     animation: vertical 1s ease-in-out infinite alternate;
-    top: 0;
     margin: 10% calc(50% - 25px);
     transition: .3s; }
     .top__button:hover {
@@ -482,21 +481,22 @@ input, select {
   .works__contents {
     width: 100%;
     background-color: #FFF;
-    margin-top: 10px;
+    margin-top: 1vh;
     display: flex;
     flex-direction: column;
     align-content: flex-start; }
     .works__contents .work {
       padding: 5%; }
       .works__contents .work img {
-        width: 35%;
+        width: 40%;
         transition: 0.3s;
         float: left; }
         .works__contents .work img:hover {
           opacity: 0.8; }
       .works__contents .work__detail {
-        width: 55%;
+        width: 50%;
         float: right;
+        padding-top: 10px;
         color: #333; }
         .works__contents .work__detail--title {
           font-family: 'Source Sans Pro', sans-serif;
@@ -525,17 +525,33 @@ input, select {
           width: 95%;
           margin: 0 auto;
           text-align: center;
-          margin-bottom: 20px; }
-          .works__contents .work__detail--tech .tech--title {
-            font-family: 'Source Sans Pro', sans-serif;
-            font-weight: bold;
-            font-size: 1.7vw;
-            line-height: 2.5vw; }
-          .works__contents .work__detail--tech .tech--detail {
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 1.7vw;
-            line-height: 2.5vw; }
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          padding: 0 5%; }
+          .works__contents .work__detail--tech .tech {
+            width: 33%; }
+            .works__contents .work__detail--tech .tech__title {
+              font-family: 'Source Sans Pro', sans-serif;
+              font-weight: bold;
+              font-size: 1.7vw;
+              line-height: 2.5vw; }
+              .works__contents .work__detail--tech .tech__title--tameru {
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: bold;
+                font-size: 1.4vw;
+                line-height: 2.5vw; }
+            .works__contents .work__detail--tech .tech__detail {
+              font-family: 'Source Sans Pro', sans-serif;
+              font-size: 1.7vw;
+              line-height: 2.5vw; }
         .works__contents .work__detail--link a {
           display: block;
           width: 50px;
           margin: 0 auto; }
+          .works__contents .work__detail--link a svg {
+            padding: 5;
+            width: 3%px;
+            min-width: 35px;
+            min-height: 35px; }

@@ -12,7 +12,7 @@ const Works: React.FC = () => {
   const centerTime = 1300
   const titleTime = 1600
   const workTime = 200
-  const iconStyle: React.CSSProperties = { padding: 5, fontSize: 35 };
+  const iconStyle: React.CSSProperties = {  };
 
   return (
     <div className="works">
@@ -37,10 +37,14 @@ const Works: React.FC = () => {
                 <div className="work__detail--title">Daily Necessities</div>
                 <div className="work__detail--explanation">現在地近辺のちょっと便利な情報を表示<p>※現在開発中</p></div>
                 <div className="work__detail--tech">
-                  <div className="tech--title">Frontend</div>
-                  <div className="tech--detail">Nuxt.js + Vue.js</div>
-                  <div className="tech--title">Deploy</div>
-                  <div className="tech--detail">CircleCI + Firebase</div>
+                  <div className="tech">
+                    <div className="tech__title">Frontend</div>
+                    <div className="tech__detail">Nuxt.js + Vue.js</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech__title">Deploy</div>
+                    <div className="tech__detail">CircleCI + Firebase</div>
+                  </div>
                 </div>
                 <div className="work__detail--link">
                   {/* <a href="https://github.com/kinakome" target="_blank" rel="noopener noreferrer">
@@ -62,10 +66,14 @@ const Works: React.FC = () => {
                 <div className="work__detail--title">Portfolio</div>
                 <div className="work__detail--explanation">ポートフォリオサイト</div>
                 <div className="work__detail--tech">
-                  <div className="tech--title">Frontend</div>
-                  <div className="tech--detail">React.js</div>
-                  <div className="tech--title">Deploy</div>
-                  <div className="tech--detail">Netlify</div>
+                  <div className="tech">
+                    <div className="tech__title">Frontend</div>
+                    <div className="tech__detail">React.js</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech__title">Deploy</div>
+                    <div className="tech__detail">Netlify</div>
+                  </div>
                 </div>
                 <div className="work__detail--link">
                   <a href="https://github.com/kinakome/portfolio" target="_blank" rel="noopener noreferrer">
@@ -84,12 +92,18 @@ const Works: React.FC = () => {
                 <div className="work__detail--title">illust chat</div>
                 <div className="work__detail--explanation">いらすとやのイラストをストック・交換するチャットアプリ<p>※現在停止中</p></div>
                 <div className="work__detail--tech">
-                  <div className="tech--title">Frontend</div>
-                  <div className="tech--detail">jQuery</div>
-                  <div className="tech--title">Backend</div>
-                  <div className="tech--detail">Express + websocket</div>
-                  <div className="tech--title">Deploy</div>
-                  <div className="tech--detail">Amazon EC2</div>
+                  <div className="tech">
+                    <div className="tech__title">Frontend</div>
+                    <div className="tech__detail">jQuery</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech__title">Backend</div>
+                    <div className="tech__detail">Express + websocket</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech__title">Deploy</div>
+                    <div className="tech__detail">Amazon EC2</div>
+                  </div>
                 </div>
                 <div className="work__detail--link">
                   <a href="https://github.com/kinakome/illustya" target="_blank" rel="noopener noreferrer">
@@ -108,12 +122,18 @@ const Works: React.FC = () => {
                 <div className="work__detail--title">B-plus</div>
                 <div className="work__detail--explanation">学バスの時刻表アプリケーション<p>※現在停止中</p></div>
                 <div className="work__detail--tech">
-                  <div className="tech--title">Frontend</div>
-                  <div className="tech--detail">jQuery</div>
-                  <div className="tech--title">Backend</div>
-                  <div className="tech--detail">Ruby on Rails</div>
-                  <div className="tech--title">Deploy</div>
-                  <div className="tech--detail">heroku</div>
+                  <div className="tech">
+                    <div className="tech__title">Frontend</div>
+                    <div className="tech__detail">jQuery</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech__title">Backend</div>
+                    <div className="tech__detail">Ruby on Rails</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech__title">Deploy</div>
+                    <div className="tech__detail">heroku</div>
+                  </div>
                 </div>
               </div>  
             {/* </Reveal> */}
@@ -124,11 +144,17 @@ const Works: React.FC = () => {
             <TameruIcon />
             {/* <Reveal delay={expTime} animation={Animation.FadeInRight}> */}
               <div className="work__detail">
-                <div className="work__detail--title">tameru</div>
-                <div className="work__detail--explanation">技術書管理アプリケーション<p>※現在開発中</p></div>
-                <div className="work__detail--tech">
-                <div className="tech--title">Frontend・Backend</div>
-                  <div className="tech--detail">Flutter</div>
+                <div className="tech">
+                  <div className="work__detail--title">tameru</div>
+                  <div className="work__detail--explanation">技術書管理アプリケーション<p>※現在開発中</p></div>
+                </div>
+                <div className="tech">
+                  <div className="work__detail--tech">
+                  <div className="tech">
+                    <div className="tech__title--tameru">Frontend・Backend</div>
+                      <div className="tech__detail">Flutter</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             {/* </Reveal> */}
@@ -139,7 +165,7 @@ const Works: React.FC = () => {
             <OtherIcon />
             {/* <Reveal delay={expTime} animation={Animation.FadeInRight}> */}
               <div className="work__detail">
-                <div className="work__detail--title">Daily Necessities</div>
+                <div className="work__detail--title">Other</div>
                 <div className="work__detail--explanation">現在地近辺のちょっと便利な情報を表示</div>
                 <div className="work__detail--tech">使用技術</div>
               </div>  
