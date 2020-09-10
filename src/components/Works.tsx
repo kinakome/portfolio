@@ -46,7 +46,7 @@ const Works: React.FC = () => {
       >
         <div className="works__modal">
           <button className="mr-2" onClick={closeModal}>close</button>
-          {/* <Slideshow /> */}
+          <Slideshow />
         </div>
       </Modal> 
       <div className="works__header">

@@ -571,7 +571,10 @@ input, select {
               .works__contents .work__detail--link .icons svg:hover {
                 opacity: 0.7; }
 
-.slide__content {
-  height: 200px;
-  width: 200px;
-  background-color: red; }
+.slide {
+  height: 80vh; }
+  .slide__content {
+    height: 80vh;
+    background-color: red; }
+  .slide button {
+    color: black; }
