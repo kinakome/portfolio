@@ -538,11 +538,19 @@ input, select {
         float: left; }
         .works__contents .work img:hover {
           opacity: 0.8; }
+        @media (max-width: 720px) {
+          .works__contents .work img {
+            width: 100%; } }
       .works__contents .work__detail {
         width: 50%;
         float: right;
         padding-top: 10px;
         color: #333; }
+        @media (max-width: 720px) {
+          .works__contents .work__detail {
+            width: 100%;
+            min-height: 300px;
+            padding: 40px; } }
         .works__contents .work__detail--title {
           font-family: 'Source Sans Pro', sans-serif;
           font-weight: bold;
@@ -554,6 +562,11 @@ input, select {
           margin: 0 auto;
           margin-bottom: 3%;
           height: 11%; }
+          @media (max-width: 720px) {
+            .works__contents .work__detail--title {
+              font-size: 25px;
+              height: 30px;
+              width: 100%; } }
         .works__contents .work__detail--explanation {
           font-family: 'Noto Sans JP', sans-serif;
           font-size: 2vw;
@@ -562,6 +575,11 @@ input, select {
           margin: 0 auto;
           text-align: center;
           margin-bottom: 20px; }
+          @media (max-width: 720px) {
+            .works__contents .work__detail--explanation {
+              font-size: 18px;
+              line-height: 25px;
+              width: 100%; } }
           .works__contents .work__detail--explanation p {
             margin-top: 10px;
             font-size: 1.6vw;
@@ -576,21 +594,33 @@ input, select {
           flex-wrap: wrap;
           padding: 0 5%; }
           .works__contents .work__detail--tech .tech {
-            width: 33%; }
+            width: 50%; }
             .works__contents .work__detail--tech .tech__title {
               font-family: 'Source Sans Pro', sans-serif;
               font-weight: bold;
               font-size: 1.7vw;
               line-height: 2.5vw; }
+              @media (max-width: 720px) {
+                .works__contents .work__detail--tech .tech__title {
+                  font-size: 18px;
+                  line-height: 25px; } }
               .works__contents .work__detail--tech .tech__title--tameru {
                 font-family: 'Source Sans Pro', sans-serif;
                 font-weight: bold;
                 font-size: 1.4vw;
                 line-height: 2.5vw; }
+                @media (max-width: 720px) {
+                  .works__contents .work__detail--tech .tech__title--tameru {
+                    font-size: 16px;
+                    line-height: 25px; } }
             .works__contents .work__detail--tech .tech__detail {
               font-family: 'Source Sans Pro', sans-serif;
               font-size: 1.7vw;
               line-height: 2.5vw; }
+              @media (max-width: 720px) {
+                .works__contents .work__detail--tech .tech__detail {
+                  font-size: 14px;
+                  line-height: 20px; } }
         .works__contents .work__detail--link {
           padding: 0 11%; }
           .works__contents .work__detail--link .icons {
