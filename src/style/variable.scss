@@ -9,3 +9,25 @@ $red: rgb(253, 84, 84);
 $lightRed: #FF8E8E;
 $lightBlue: #717CFF;
 $lightGreen: #9AFFA5;
+
+//レスポンシブ設定
+$mobileMax: 720px;
+$iphoneSeMax: 330px;
+
+@mixin mobile {
+  @media (max-width: ($mobileMax)) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width: ($mobileMax)) {
+    @content;
+  }
+}
+
+@mixin iphoneSE {
+  @media (max-width: ($iphoneSeMax)) {
+    @content;
+  }
+}

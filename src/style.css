@@ -191,6 +191,16 @@ input, select {
     width: 30%;
     float: left;
     position: relative; }
+    @media (min-width: 720px) {
+      .top__left {
+        float: left; } }
+    @media (max-width: 720px) {
+      .top__left {
+        width: 100%;
+        height: 150px;
+        background-color: #333;
+        background-color: #333;
+        z-index: 10; } }
     .top__left--line {
       border-bottom: 3px #FFF solid;
       width: 30%;
@@ -205,16 +215,24 @@ input, select {
       left: 35%; }
   .top__right {
     width: 70%;
-    min-height: 100vh;
     background: #FFF;
-    float: right;
     padding-top: 100px;
     position: relative; }
+    @media (min-width: 720px) {
+      .top__right {
+        float: right;
+        min-height: 100vh; } }
+    @media (max-width: 720px) {
+      .top__right {
+        width: 100%; } }
   .top__contents {
     width: 60%;
     margin: 0 auto;
     font-family: 'Noto Sans JP', sans-serif;
     color: #333; }
+    @media (max-width: 720px) {
+      .top__contents {
+        margin-top: 100px; } }
     .top__contents--name {
       font-size: 30px;
       margin-bottom: 20px; }
