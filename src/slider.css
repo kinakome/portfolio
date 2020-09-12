@@ -1,7 +1,11 @@
 .slide {
-  height: 80vh; }
+  height: 80vh;
+  margin-top: 1vh; }
   .slide__content {
-    height: 80vh;
+    height: 70vh;
     background-color: red; }
+    .slide__content img {
+      height: 100%;
+      object-fit: cover; }
   .slide button {
     color: black; }

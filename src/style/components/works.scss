@@ -5,6 +5,35 @@
     width: 90vw;
     height: 90vh;
     z-index: 300;
+    cursor: none;
+    .my-parts {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      transition: .3s;
+      &:hover{
+        opacity: 0.7;
+      }
+    }
+    .my-parts span::before,
+    .my-parts span::after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 84%;
+      height: 16%;
+      margin: -8% 0 0 -42%;
+      background: $black;
+    }
+    .my-parts span::before {
+      transform: rotate(-45deg);
+    }
+    .my-parts span::after {
+      transform: rotate(45deg);
+    }
   }
   &__header{
     width: 100%;

@@ -451,7 +451,31 @@ input, select {
   .works__modal {
     width: 90vw;
     height: 90vh;
-    z-index: 300; }
+    z-index: 300;
+    cursor: none; }
+    .works__modal .my-parts {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      transition: .3s; }
+      .works__modal .my-parts:hover {
+        opacity: 0.7; }
+    .works__modal .my-parts span::before,
+    .works__modal .my-parts span::after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 84%;
+      height: 16%;
+      margin: -8% 0 0 -42%;
+      background: #333; }
+    .works__modal .my-parts span::before {
+      transform: rotate(-45deg); }
+    .works__modal .my-parts span::after {
+      transform: rotate(45deg); }
   .works__header {
     width: 100%;
     position: relative;
@@ -572,9 +596,13 @@ input, select {
                 opacity: 0.7; }
 
 .slide {
-  height: 80vh; }
+  height: 80vh;
+  margin-top: 1vh; }
   .slide__content {
-    height: 80vh;
+    height: 70vh;
     background-color: red; }
+    .slide__content img {
+      height: 100%;
+      object-fit: cover; }
   .slide button {
     color: black; }

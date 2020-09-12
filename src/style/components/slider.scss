@@ -1,8 +1,13 @@
 .slide{
   height: 80vh;
+  margin-top: 1vh;
   &__content{
-    height: 80vh;
+    height: 70vh;
     background-color: red;
+    img{
+      height: 100%;
+      object-fit: cover;
+    }
   }
   button{
     color: black;

@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import DnImage1 from '../images/works/screen/dn1.png'
+import DnImage2 from '../images/works/screen/dn2.jpg'
 
 const Slideshow: React.FC = () => {
-  const lineTime = 700
   const settings = {
     dots: true,
     infinite: true,
@@ -17,10 +18,10 @@ const Slideshow: React.FC = () => {
     <div className="slide">
       <Slider {...settings}>
         <div className="slide__content">
-          <h3>2</h3>
+          <img src={DnImage1} alt="entrance" className="entrance__contents--background"></img>
         </div>
         <div className="slide__content">
-          <h3>3</h3>
+          <img src={DnImage2} alt="entrance" className="entrance__contents--background"></img>
         </div>
         <div className="slide__content">
           <h3>4</h3>

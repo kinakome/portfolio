@@ -45,7 +45,7 @@ const Works: React.FC = () => {
         contentLabel="Example Modal"
       >
         <div className="works__modal">
-          <button className="mr-2" onClick={closeModal}>close</button>
+          <div className="my-parts hover-elm" onClick={closeModal}><span></span></div>
           <Slideshow />
         </div>
       </Modal> 
