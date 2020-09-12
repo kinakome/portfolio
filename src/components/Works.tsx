@@ -109,11 +109,10 @@ const Works: React.FC = () => {
                   </div>
                 </div>
                 <div className="work__detail--link">
-                  <div className="icons">
+                  <div className="icons icons--single">
                     <a href="https://github.com/kinakome/portfolio" target="_blank" rel="noopener noreferrer">
                       <FontAwesomeIcon style={iconStyle} icon={faGithubSquare} className="hover-elm" />
                     </a>
-                    <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={openModal}/>
                   </div>
                 </div>
               </div>  
@@ -215,8 +214,7 @@ const Works: React.FC = () => {
             {/* <Reveal delay={expTime} animation={Animation.FadeInRight}> */}
               <div className="work__detail">
                 <div className="work__detail--title">Other</div>
-                <div className="work__detail--explanation">現在地近辺のちょっと便利な情報を表示</div>
-                <div className="work__detail--tech">使用技術</div>
+                <div className="work__detail--explanation"></div>
               </div>  
             {/* </Reveal> */}
           </div>

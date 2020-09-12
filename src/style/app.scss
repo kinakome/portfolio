@@ -2,6 +2,7 @@
   background-color: $lightBlack;
   a{
     transition: .3s;
+    cursor: none;
     &:visited{
       color: $black;
     }

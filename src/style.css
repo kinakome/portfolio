@@ -93,7 +93,8 @@ input, select {
 .wrapper {
   background-color: #5e5e5e; }
   .wrapper a {
-    transition: .3s; }
+    transition: .3s;
+    cursor: none; }
     .wrapper a:visited {
       color: #333; }
     .wrapper a:hover {
@@ -600,9 +601,10 @@ input, select {
   margin-top: 1vh; }
   .slide__content {
     height: 70vh;
-    background-color: red; }
+    background-color: #333; }
     .slide__content img {
       height: 100%;
-      object-fit: cover; }
+      object-fit: cover;
+      margin: 0 auto; }
   .slide button {
     color: black; }
