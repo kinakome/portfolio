@@ -12,7 +12,9 @@ $lightGreen: #9AFFA5;
 
 //レスポンシブ設定
 $mobileMax: 720px;
-$iphoneSeMax: 330px;
+$titleMax: 470px;
+$flexMax: 618px;
+
 
 @mixin mobile {
   @media (max-width: ($mobileMax)) {
@@ -26,8 +28,15 @@ $iphoneSeMax: 330px;
   }
 }
 
-@mixin iphoneSE {
-  @media (max-width: ($iphoneSeMax)) {
+@mixin titleMin {
+  @media (max-width: ($titleMax)) {
+    @content;
+  }
+}
+
+
+@mixin flexMin {
+  @media (max-width: ($flexMax)) {
     @content;
   }
 }

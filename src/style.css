@@ -168,6 +168,11 @@ input, select {
       top: calc(50vh - 210px);
       left: calc(50% - 225px);
       object-fit: contain; }
+      @media (max-width: 470px) {
+        .entrance__contents--title {
+          width: 95%;
+          top: calc(50vh - 210px);
+          left: calc(3%); } }
     .entrance__contents--button {
       position: absolute;
       bottom: calc(150px + 13%);
@@ -330,6 +335,9 @@ input, select {
       top: 40px;
       width: 45%;
       border-bottom: 3px #FFF solid; }
+      @media (max-width: 618px) {
+        .skill__header--line {
+          width: 40%; } }
     .skill__header--title {
       font-size: 30px;
       color: #FFF;
@@ -352,6 +360,9 @@ input, select {
         left: calc(3% + 87px);
         color: #FFF;
         font-family: 'Source Sans Pro', sans-serif; }
+        @media (max-width: 618px) {
+          .skill__contents .skill-type__title {
+            left: calc(50% - 40px); } }
         .skill__contents .skill-type__title--other {
           position: absolute;
           font-size: 20px;
@@ -359,6 +370,9 @@ input, select {
           left: calc(3% + 100px);
           color: #FFF;
           font-family: 'Source Sans Pro', sans-serif; }
+          @media (max-width: 618px) {
+            .skill__contents .skill-type__title--other {
+              left: calc(50% - 25px); } }
       .skill__contents .skill-type__center-box {
         height: 90px;
         width: 90px;
@@ -368,6 +382,9 @@ input, select {
         position: absolute;
         top: 35px;
         left: calc(3% + 80px); }
+        @media (max-width: 618px) {
+          .skill__contents .skill-type__center-box {
+            left: calc(50% - 45px); } }
       .skill__contents .skill-type__side-box--left {
         height: 40px;
         width: 40px;
@@ -377,6 +394,9 @@ input, select {
         position: absolute;
         top: 60px;
         left: 3%; }
+        @media (max-width: 618px) {
+          .skill__contents .skill-type__side-box--left {
+            left: calc(50% - 120px); } }
       .skill__contents .skill-type__side-box--right {
         height: 40px;
         width: 40px;
@@ -387,6 +407,9 @@ input, select {
         top: 60px;
         left: calc(3% + 210px);
         animation: r3 5s linear infinite; }
+        @media (max-width: 618px) {
+          .skill__contents .skill-type__side-box--right {
+            left: calc(50% + 80px); } }
     .skill__contents .skill-detail {
       width: 100%;
       display: flex;

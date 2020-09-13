@@ -14,6 +14,9 @@
       top: 40px;
       width: 45%;
       border-bottom:3px $white solid;
+      @include flexMin {
+        width: 40%;
+      }
     }
     &--title{
       font-size: 30px;
@@ -39,13 +42,19 @@
         left: calc(3% + 87px);
         color: $white;
         font-family: 'Source Sans Pro', sans-serif;
+        @include flexMin {
+          left: calc(50% - 40px);//直す
+        }
         &--other{
           position: absolute;
           font-size: 20px;
           top: 70px;
           left: calc(3% + 100px);
           color: $white;
-          font-family: 'Source Sans Pro', sans-serif;       
+          font-family: 'Source Sans Pro', sans-serif;   
+          @include flexMin {
+            left: calc(50% - 25px);//直す
+          }   
         }
       }
       &__center-box{
@@ -57,6 +66,9 @@
         position: absolute;
         top: 35px;
         left: calc(3% + 80px);
+        @include flexMin {
+          left: calc(50% - 45px);
+        }
       }
       &__side-box{
         &--left{
@@ -68,6 +80,9 @@
           position: absolute;
           top: 60px;
           left: 3%;
+          @include flexMin {
+            left: calc(50% - 120px);
+          }
         }
         &--right{
           height: 40px;
@@ -79,6 +94,9 @@
           top: 60px;
           left: calc(3% + 210px);
           animation: r3 5s linear infinite ;
+          @include flexMin {
+            left: calc(50% + 80px);
+          }
         }
       }
     }

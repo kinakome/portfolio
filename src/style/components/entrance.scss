@@ -25,6 +25,11 @@
       top: calc(50vh - 210px);
       left: calc(50% - 225px);
       object-fit: contain;
+      @include titleMin {
+        width: 95%;
+        top: calc(50vh - 210px);
+        left: calc(3%);
+      }
     }
     &--button{
       position: absolute;
