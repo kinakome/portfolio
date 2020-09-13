@@ -9,8 +9,6 @@ type Props = {
 
 const Entrance: React.FC<Props> = () => {
 
-  // const backGround = {backgroundImage:`url(${BackgroundImg})`}
-
   return (
     <div className="entrance">
       <div className="entrance__contents">

@@ -10,7 +10,6 @@ type Props = {
 const Header: React.FC<Props> = () => {
 
   return (
-    // <Reveal delay={700} animation={Animation.FadeIn}> 
     <div className="header">
       <div className="header__menu">
         <ul className="header__menu--list">
@@ -44,7 +43,6 @@ const Header: React.FC<Props> = () => {
         </ul>
       </div>
     </div>
-    // </Reveal>
   )
 }
 

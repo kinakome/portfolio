@@ -26,15 +26,6 @@ const Slideshow: React.FC = () => {
         <div className="slide__content">
           <img src={DnImage2} alt="screen" className=""></img>
         </div>
-        {/* <div className="slide__content">
-          <h3>4</h3>
-        </div>
-        <div className="slide__content">
-          <h3>5</h3>
-        </div>
-        <div className="slide__content">
-          <h3>6</h3>
-        </div> */}
       </Slider>
     </div>
   )

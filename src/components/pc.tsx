@@ -5,7 +5,6 @@ type Props = {
 
 }
 
-// 関数コンポーネント（returnに表示するhetmlをかく）
 const PC: React.FC<Props> = () => {
 
   return (
