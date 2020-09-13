@@ -53,8 +53,7 @@ const Top: React.FC<Props> = () => {
               <p>@kinakome</p>
             </div>
           </div>
-        </div>
-        <Reveal delay={buttonTime} animation={Animation.FadeIn}> 
+          <Reveal delay={buttonTime} animation={Animation.FadeIn}> 
           <Link
                 activeClass="active"
                 to="skill"
@@ -67,6 +66,7 @@ const Top: React.FC<Props> = () => {
             </div>
           </Link>
         </Reveal>
+        </div>
       </div>
       </Reveal>
     </div>  

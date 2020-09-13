@@ -1,13 +1,46 @@
 .works{
   width: 100%;
   padding-top: 10px;
+  &__modal{
+    width: 90vw;
+    height: 90vh;
+    z-index: 300;
+    cursor: none;
+    .my-parts {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      transition: .3s;
+      &:hover{
+        opacity: 0.7;
+      }
+    }
+    .my-parts span::before,
+    .my-parts span::after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 84%;
+      height: 16%;
+      margin: -8% 0 0 -42%;
+      background: $black;
+    }
+    .my-parts span::before {
+      transform: rotate(-45deg);
+    }
+    .my-parts span::after {
+      transform: rotate(45deg);
+    }
+  }
   &__header{
     width: 100%;
     position: relative;
     position: sticky;
     top: 0px;
     background-color: $black;
-    z-index: 100;
     padding: 5px;
     &--line{
       width: 100%;
@@ -38,7 +71,7 @@
     width: 100%;
     // overflow: scroll;
     background-color: $white;
-    margin-top: 10px;
+    margin-top: 1vh;
     display: flex;
     flex-direction: column;
     // flex-wrap: wrap;
@@ -47,21 +80,26 @@
     .work{
       padding: 5%;
       img{
-        width: 35%;
-        // margin: 40px 5vw 0px 5vw;
-        transition: 0.3s;
+        width: 40%;
         float: left;
-        &:hover{
-          opacity: 0.8;
+        @include mobile {
+          width: 100%;
         }
       }
       &__detail{
-        width: 55%;
+        width: 50%;
         float: right;
         // background-color: red;
+        padding-top: 10px;
         color: $black;
+        @include mobile {
+          width: 100%;
+          min-height: 300px;
+          padding: 40px;
+        }
         &--title{
           font-family: 'Source Sans Pro', sans-serif;
+          font-weight: bold;
           font-size: 3vw;
           text-align: center;
           padding-bottom: 2%;
@@ -70,6 +108,11 @@
           margin: 0 auto;
           margin-bottom: 3%;
           height: 11%;
+          @include mobile {
+            font-size: 25px;
+            height: 30px;
+            width: 100%;
+          }
         }
         &--explanation{
           font-family: 'Noto Sans JP', sans-serif;
@@ -78,8 +121,12 @@
           width: 80%;
           margin: 0 auto;
           text-align: center;
-          margin-bottom: 40px;
-          height: 20%;
+          margin-bottom: 20px;
+          @include mobile {
+            font-size: 18px;
+            line-height: 25px;
+            width: 100%;
+          }
           p{
             margin-top: 10px;
             font-size: 1.6vw;
@@ -87,11 +134,76 @@
           }
         }
         &--tech{
-          height: 100px;
           width: 95%;
-          border-left: 30px $black solid;
           margin: 0 auto;
           text-align: center;
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          padding: 0 5%;
+
+          .tech{
+            width: 50%;
+            &__title{
+              font-family: 'Source Sans Pro', sans-serif;
+              font-weight: bold;
+              font-size: 1.7vw;
+              line-height: 2.5vw;
+              @include mobile {
+                font-size: 18px;
+                line-height: 25px;
+              }
+              &--tameru{
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: bold;
+                font-size: 1.4vw;
+                line-height: 2.5vw;    
+                @include mobile {
+                  font-size: 16px;
+                  line-height: 25px;
+                }            
+              }
+            }
+            &__detail{
+              font-family: 'Source Sans Pro', sans-serif;
+              font-size: 1.7vw;
+              line-height: 2.5vw;
+              @include mobile {
+                font-size: 14px;
+                line-height: 20px;
+              }   
+            }            
+          }
+        }
+        &--link{
+          padding: 0 11%;
+          .icons{
+            margin: 0 auto; 
+            width: 70px;
+            &--single{
+              width: 30px;
+            }
+            a{
+              display: block;
+              width: 30px;
+              display: inline-block;
+              svg{
+                padding: 5;
+                width: 30px;
+              }
+              margin-right: 10px;
+            }
+            svg{
+              padding: 5;
+              width: 30px;
+              height: 30px;
+              transition: .3s;
+              &:hover{
+                opacity: 0.7;
+              }
+            }
+          }
         }
       }
     }

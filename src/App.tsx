@@ -22,13 +22,11 @@ const App: React.FC = () => {
       cursolOut!.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
     });
     const linkElem = document.querySelectorAll('.hover-elm');
-    console.log(linkElem)
 
     for (let i = 0; i < linkElem.length; i++) {
       linkElem[i].addEventListener('mouseover', () => {
         cursolInner?.classList.add('hov_');
         cursolOut?.classList.add('hov_');
-        console.log(cursolInner?.classList)
       });
 
       linkElem[i].addEventListener('mouseout', () => {

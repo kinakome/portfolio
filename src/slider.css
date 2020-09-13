@@ -1,0 +1,10 @@
+.slide {
+  height: 80vh;
+  margin-top: 1vh; }
+  .slide__content {
+    height: 70vh; }
+    .slide__content img {
+      width: 50%;
+      object-fit: cover; }
+  .slide button {
+    color: black; }
