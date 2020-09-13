@@ -5,9 +5,15 @@
     height: 70vh;
     background-color: $black;
     img{
-      height: 100%;
       object-fit: cover;
       margin: 0 auto;
+      // @include pc {
+        height: 100%;
+      // }
+      // @include mobile {
+      //   max-height: 100%;
+      //   width: 100%;
+      // }
     }
   }
   button{

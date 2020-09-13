@@ -8,8 +8,15 @@ import { faExternalLinkAlt, faImages } from "@fortawesome/free-solid-svg-icons";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slideshow from './Slideshow'
 import Modal from 'react-modal'
+import DnImage1 from '../images/works/screen/dn1.png'
+import DnImage2 from '../images/works/screen/dn2.jpg'
+import DnImage3 from '../images/works/screen/dn3.jpeg'
+import Bplus1 from '../images/works/screen/b-plus1.jpeg'
+import Bplus2 from '../images/works/screen/b-plus2.jpg'
+import Tameru1 from '../images/works/screen/tameru.png'
+import Tameru2 from '../images/works/screen/tameru2.png'
+
 
 const Works: React.FC = () => {
   const lineTime = 700
@@ -24,17 +31,30 @@ const Works: React.FC = () => {
       right                 : 'auto',
       bottom                : 'auto',
       marginRight           : '-50%',
-      transform             : 'translate(-50%, -50%)'
+      transform             : 'translate(-50%, -50%)',      
     }
-  };  
+  };
+
   const [modalIsOpen,setIsOpen] = React.useState(false);
-  const openModal = ()  => {
-      setIsOpen(true);
+
+  const [ShowWork,setShowWork] = React.useState(1);
+  const openModal = (work: number)  => {
+    setIsOpen(true);
+    setShowWork(work)
   }
 
   const closeModal = () => {
-      setIsOpen(false);
+    setIsOpen(false);
   }
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight:true
+  };
 
   return (
     <div className="works">
@@ -46,7 +66,58 @@ const Works: React.FC = () => {
       >
         <div className="works__modal">
           <div className="my-parts hover-elm" onClick={closeModal}><span></span></div>
-          <Slideshow />
+          <div className="slide">
+            {(() => {
+                if (ShowWork === 1) {
+                    return (
+                    <Slider {...settings} >
+                      <div className="slide__content slide__content--dn">
+                        <img src={DnImage3} alt="screen"></img>
+                      </div>
+                      <div className="slide__content slide__content--dn">
+                        <img src={DnImage2} alt="screen"></img>
+                      </div>
+                      <div className="slide__content slide__content--dn">
+                        <img src={DnImage1} alt="screen"></img>
+                      </div>
+                    </Slider>);
+                }else if (ShowWork === 2){
+                  return (
+                    <Slider {...settings} >
+                      <div className="slide__content slide__content--bplus">
+                        <img src={Bplus1} alt="screen"></img>
+                      </div>
+                      <div className="slide__content slide__content--bplus">
+                        <img src={Bplus2} alt="screen"></img>
+                      </div>
+                    </Slider>
+                  )
+                }else if (ShowWork === 3){
+                  return (
+                    <Slider {...settings} >
+                      <div className="slide__content slide__content--bplus">
+                        <img src={Bplus1} alt="screen"></img>
+                      </div>
+                      <div className="slide__content slide__content--bplus">
+                        <img src={Bplus2} alt="screen"></img>
+                      </div>
+                      </Slider>
+                  )
+                }else if (ShowWork === 4){
+                  return (
+                    <Slider {...settings} >
+                      <div className="slide__content slide__content--tameru">
+                        <img src={Tameru1} alt="screen"></img>
+                      </div>
+                      <div className="slide__content slide__content--tameru">
+                        <img src={Tameru2} alt="screen"></img>
+                      </div>
+                    </Slider>
+                  )
+                }
+                return false;
+            })()}
+          </div>
         </div>
       </Modal> 
       <div className="works__header">
@@ -83,7 +154,7 @@ const Works: React.FC = () => {
                   <a href="https://daily-necessities-4adfb.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon style={iconStyle} icon={faExternalLinkAlt} className="hover-elm" />
                   </a>
-                  <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={openModal} />
+                  <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm"  onClick={() => openModal(1)} />
                 </div>
               </div>
             </div>  
@@ -140,7 +211,7 @@ const Works: React.FC = () => {
                   <a href="https://github.com/kinakome/illustya" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon style={iconStyle} icon={faGithubSquare} className="hover-elm" />
                   </a>
-                  <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={openModal} />
+                  <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={() => openModal(2)} />
                 </div>
               </div>
             </div>  
@@ -168,7 +239,7 @@ const Works: React.FC = () => {
               </div>
               <div className="work__detail--link">
                 <div className="icons icons--single">
-                  <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={openModal} />
+                  <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={() => openModal(3)} />
                 </div>
               </div>
             </div>  
@@ -192,7 +263,7 @@ const Works: React.FC = () => {
               </div>
               <div className="work__detail--link">
                 <div className="icons icons--single">
-                  <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={openModal} />
+                  <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={() => openModal(4)} />
                 </div>
               </div>
             </div>
