@@ -8,8 +8,13 @@ import { faExternalLinkAlt, faImages } from "@fortawesome/free-solid-svg-icons";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slideshow from './Slideshow'
 import Modal from 'react-modal'
+import DnImage1 from '../images/works/screen/dn1.png'
+import DnImage2 from '../images/works/screen/dn2.jpg'
+import DnImage3 from '../images/works/screen/dn3.jpeg'
+import Bplus1 from '../images/works/screen/b-plus1.jpeg'
+import Bplus2 from '../images/works/screen/b-plus2.jpg'
+import Tameru from '../images/works/screen/tameru.png'
 
 const Works: React.FC = () => {
   const lineTime = 700
@@ -24,7 +29,7 @@ const Works: React.FC = () => {
       right                 : 'auto',
       bottom                : 'auto',
       marginRight           : '-50%',
-      transform             : 'translate(-50%, -50%)'
+      transform             : 'translate(-50%, -50%)',      
     }
   };  
   const [modalIsOpen,setIsOpen] = React.useState(false);
@@ -36,6 +41,15 @@ const Works: React.FC = () => {
       setIsOpen(false);
   }
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight:true
+  };
+
   return (
     <div className="works">
       <Modal
@@ -46,7 +60,28 @@ const Works: React.FC = () => {
       >
         <div className="works__modal">
           <div className="my-parts hover-elm" onClick={closeModal}><span></span></div>
-          <Slideshow />
+          <div className="slide">
+            <Slider {...settings}>
+              <div className="slide__content slide__content--dn">
+                <img src={DnImage1} alt="screen" className=""></img>
+              </div>
+              <div className="slide__content slide__content--dn">
+                <img src={DnImage2} alt="screen" className=""></img>
+              </div>
+              <div className="slide__content slide__content--dn">
+                <img src={DnImage3} alt="screen" className=""></img>
+              </div>
+              <div className="slide__content slide__content--bplus">
+                <img src={Bplus1} alt="screen" className=""></img>
+              </div>
+              <div className="slide__content slide__content--bplus">
+                <img src={Bplus2} alt="screen" className=""></img>
+              </div>
+              <div className="slide__content slide__content--tameru">
+                <img src={Tameru} alt="screen" className=""></img>
+              </div>
+            </Slider>
+          </div>
         </div>
       </Modal> 
       <div className="works__header">

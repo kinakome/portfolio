@@ -15,7 +15,7 @@ const Top: React.FC<Props> = () => {
   const barTime = 700
   const titleTime = 1200
   const contentsTime = 1600
-  const buttonTime = 1800
+  const buttonTime = 0
 
   const iconStyle: React.CSSProperties = { padding: 10, fontSize: 50 };
 
