@@ -81,12 +81,7 @@
       padding: 5%;
       img{
         width: 40%;
-        // margin: 40px 5vw 0px 5vw;
-        transition: 0.3s;
         float: left;
-        &:hover{
-          opacity: 0.8;
-        }
         @include mobile {
           width: 100%;
         }

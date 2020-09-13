@@ -557,10 +557,7 @@ input, select {
       padding: 5%; }
       .works__contents .work img {
         width: 40%;
-        transition: 0.3s;
         float: left; }
-        .works__contents .work img:hover {
-          opacity: 0.8; }
         @media (max-width: 720px) {
           .works__contents .work img {
             width: 100%; } }

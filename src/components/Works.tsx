@@ -208,17 +208,6 @@ const Works: React.FC = () => {
             {/* </Reveal> */}
           </div>
         </Reveal>
-        <Reveal delay={workTime} animation={Animation.FadeInUp}>
-          <div className="work">
-            <OtherIcon />
-            {/* <Reveal delay={expTime} animation={Animation.FadeInRight}> */}
-              <div className="work__detail">
-                <div className="work__detail--title">Other</div>
-                <div className="work__detail--explanation"></div>
-              </div>  
-            {/* </Reveal> */}
-          </div>
-        </Reveal>
       </div>
     </div>
   )
