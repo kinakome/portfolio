@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-scroll';
 import { Reveal } from "react-genie";
 import { Animation } from "react-genie-styled-components";
+import { HamburgerVortex } from 'react-animated-burgers'
+
 
 type Props = {
 
@@ -9,9 +11,16 @@ type Props = {
 
 const Header: React.FC<Props> = () => {
 
+  const [isActive,setIsActive] = React.useState(false);
+  const toggleButton = () => {
+    setIsActive(!isActive)
+  }
   return (
     <div className="header">
       <div className="header__menu">
+        <div className="header__menu--hamburger">
+          <HamburgerVortex isActive={isActive} toggleButton={toggleButton} className="header__menu--hamburger"/>
+        </div>  
         <ul className="header__menu--list">
           <Link
               activeClass="active"
