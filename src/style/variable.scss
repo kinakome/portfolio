@@ -14,6 +14,8 @@ $lightGreen: #9AFFA5;
 $mobileMax: 720px;
 $titleMax: 470px;
 $flexMax: 618px;
+$pcMax: 1200px;
+
 
 
 @mixin mobile {
@@ -37,6 +39,12 @@ $flexMax: 618px;
 
 @mixin flexMin {
   @media (max-width: ($flexMax)) {
+    @content;
+  }
+}
+
+@mixin mainMax {
+  @media (min-width: ($pcMax)) {
     @content;
   }
 }

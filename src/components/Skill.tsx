@@ -66,8 +66,8 @@ const Skill: React.FC<Props> = () => {
           <SkillBox name="Ruby on Rails" period="1.3 years" icon={Rails} width="50%" />
           <SkillBox name="Node.js Express" period="1 years" icon={Node} width="40%" />
           <SkillBox name="C# .NET" period="8 month" icon={CSharp} width="30%" />
-          <SkillBox name="Java" period="6 month" icon={Java} width="25%" />
           <SkillBox name="Azure" period="6 month" icon={Azure} width="25%" />
+          <SkillBox name="Java" period="4 month" icon={Java} width="20%" />
           <SkillBox name="Kubernetes" period="3 month" icon={Kubernetes} width="15%" />
           <SkillBox name="CircleCI" period="3 month" icon={CircleCI} width="15%" />
           <SkillBox name="Firebase" period="3 month" icon={Firebase} width="15%" />

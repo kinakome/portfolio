@@ -1,26 +1,8 @@
-.wrapper{
+body{
   background-color: $lightBlack;
-  a{
-    transition: .3s;
-    cursor: none;
-    &:visited{
-      color: $black;
-    }
-    &:hover{
-      opacity: 0.7;
-    }
-  }
-  &__contents{
-    background-color: $black;
-    position: relative;
-    cursor: none;
-    max-width: 1500px;
-    margin: 0 auto;
-    overflow: hidden;
-    @include titleMin {
-      cursor: auto;
-    }
-  }
+}
+main{
+  width: 100vw;
   #cursol {
     width: 10px;
     height: 10px;
@@ -64,6 +46,36 @@
       @include titleMin {
         display: none;
       }
+    }
+  }
+}
+.wrapper{
+  background-color: $lightBlack;
+  max-width: 1200px;
+  margin: 0 auto;
+  a{
+    transition: .3s;
+    cursor: none;
+    @include titleMin {
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      cursor:pointer;    
+    }
+    &:visited{
+      color: $black;
+    }
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+  &__contents{
+    background-color: $black;
+    position: relative;
+    cursor: none;
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: hidden;
+    @include titleMin {
+      cursor: auto;
     }
   }
 }
