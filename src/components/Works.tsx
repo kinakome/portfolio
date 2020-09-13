@@ -14,7 +14,9 @@ import DnImage2 from '../images/works/screen/dn2.jpg'
 import DnImage3 from '../images/works/screen/dn3.jpeg'
 import Bplus1 from '../images/works/screen/b-plus1.jpeg'
 import Bplus2 from '../images/works/screen/b-plus2.jpg'
-import Tameru from '../images/works/screen/tameru.png'
+import Tameru1 from '../images/works/screen/tameru.png'
+import Tameru2 from '../images/works/screen/tameru2.png'
+
 
 const Works: React.FC = () => {
   const lineTime = 700
@@ -31,14 +33,18 @@ const Works: React.FC = () => {
       marginRight           : '-50%',
       transform             : 'translate(-50%, -50%)',      
     }
-  };  
+  };
+
   const [modalIsOpen,setIsOpen] = React.useState(false);
-  const openModal = ()  => {
-      setIsOpen(true);
+
+  const [ShowWork,setShowWork] = React.useState(1);
+  const openModal = (work: number)  => {
+    setIsOpen(true);
+    setShowWork(work)
   }
 
   const closeModal = () => {
-      setIsOpen(false);
+    setIsOpen(false);
   }
 
   const settings = {
@@ -61,26 +67,56 @@ const Works: React.FC = () => {
         <div className="works__modal">
           <div className="my-parts hover-elm" onClick={closeModal}><span></span></div>
           <div className="slide">
-            <Slider {...settings}>
-              <div className="slide__content slide__content--dn">
-                <img src={DnImage1} alt="screen" className=""></img>
-              </div>
-              <div className="slide__content slide__content--dn">
-                <img src={DnImage2} alt="screen" className=""></img>
-              </div>
-              <div className="slide__content slide__content--dn">
-                <img src={DnImage3} alt="screen" className=""></img>
-              </div>
-              <div className="slide__content slide__content--bplus">
-                <img src={Bplus1} alt="screen" className=""></img>
-              </div>
-              <div className="slide__content slide__content--bplus">
-                <img src={Bplus2} alt="screen" className=""></img>
-              </div>
-              <div className="slide__content slide__content--tameru">
-                <img src={Tameru} alt="screen" className=""></img>
-              </div>
-            </Slider>
+            {(() => {
+                if (ShowWork === 1) {
+                    return (
+                    <Slider {...settings} >
+                      <div className="slide__content slide__content--dn">
+                        <img src={DnImage3} alt="screen"></img>
+                      </div>
+                      <div className="slide__content slide__content--dn">
+                        <img src={DnImage2} alt="screen"></img>
+                      </div>
+                      <div className="slide__content slide__content--dn">
+                        <img src={DnImage1} alt="screen"></img>
+                      </div>
+                    </Slider>);
+                }else if (ShowWork === 2){
+                  return (
+                    <Slider {...settings} >
+                      <div className="slide__content slide__content--bplus">
+                        <img src={Bplus1} alt="screen"></img>
+                      </div>
+                      <div className="slide__content slide__content--bplus">
+                        <img src={Bplus2} alt="screen"></img>
+                      </div>
+                    </Slider>
+                  )
+                }else if (ShowWork === 3){
+                  return (
+                    <Slider {...settings} >
+                      <div className="slide__content slide__content--bplus">
+                        <img src={Bplus1} alt="screen"></img>
+                      </div>
+                      <div className="slide__content slide__content--bplus">
+                        <img src={Bplus2} alt="screen"></img>
+                      </div>
+                      </Slider>
+                  )
+                }else if (ShowWork === 4){
+                  return (
+                    <Slider {...settings} >
+                      <div className="slide__content slide__content--tameru">
+                        <img src={Tameru1} alt="screen"></img>
+                      </div>
+                      <div className="slide__content slide__content--tameru">
+                        <img src={Tameru2} alt="screen"></img>
+                      </div>
+                    </Slider>
+                  )
+                }
+                return false;
+            })()}
           </div>
         </div>
       </Modal> 
@@ -118,7 +154,7 @@ const Works: React.FC = () => {
                   <a href="https://daily-necessities-4adfb.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon style={iconStyle} icon={faExternalLinkAlt} className="hover-elm" />
                   </a>
-                  <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={openModal} />
+                  <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm"  onClick={() => openModal(1)} />
                 </div>
               </div>
             </div>  
@@ -175,7 +211,7 @@ const Works: React.FC = () => {
                   <a href="https://github.com/kinakome/illustya" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon style={iconStyle} icon={faGithubSquare} className="hover-elm" />
                   </a>
-                  <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={openModal} />
+                  <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={() => openModal(2)} />
                 </div>
               </div>
             </div>  
@@ -203,7 +239,7 @@ const Works: React.FC = () => {
               </div>
               <div className="work__detail--link">
                 <div className="icons icons--single">
-                  <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={openModal} />
+                  <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={() => openModal(3)} />
                 </div>
               </div>
             </div>  
@@ -227,7 +263,7 @@ const Works: React.FC = () => {
               </div>
               <div className="work__detail--link">
                 <div className="icons icons--single">
-                  <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={openModal} />
+                  <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={() => openModal(4)} />
                 </div>
               </div>
             </div>
