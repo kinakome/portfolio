@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Reveal } from "react-genie";
 import { Animation } from "react-genie-styled-components";
-import { DnIcon, PortfolioIcon, BplusIcon, IllustChatIcon, TameruIcon, OtherIcon } from './SvgReader'
+import { DnIcon, PortfolioIcon, BplusIcon, IllustChatIcon, TameruIcon } from './SvgReader'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt, faImages } from "@fortawesome/free-solid-svg-icons";
@@ -9,13 +9,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Modal from 'react-modal'
-import DnImage1 from '../images/works/screen/dn1.png'
+import DnImage1 from '../images/works/screen/dn1.jpg'
 import DnImage2 from '../images/works/screen/dn2.jpg'
-import DnImage3 from '../images/works/screen/dn3.jpeg'
-import Bplus1 from '../images/works/screen/b-plus1.jpeg'
+import DnImage3 from '../images/works/screen/dn3.jpg'
+import Bplus1 from '../images/works/screen/b-plus1.jpg'
 import Bplus2 from '../images/works/screen/b-plus2.jpg'
-import Tameru1 from '../images/works/screen/tameru.png'
-import Tameru2 from '../images/works/screen/tameru2.png'
+import Tameru1 from '../images/works/screen/tameru.jpg'
+import Tameru2 from '../images/works/screen/tameru2.jpg'
 
 
 const Works: React.FC = () => {

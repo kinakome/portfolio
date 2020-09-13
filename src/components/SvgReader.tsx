@@ -1,27 +1,13 @@
-import PCImg from '../images/pc.svg'
-import CameraImg from '../images/camera.svg'
-import LogoSvg from '../images/entrance/logo.svg'
+import LogoSvg from '../images/entrance/logo.jpg'
 import TitleSvg from '../images/entrance/title.svg'
 import ButtonSvg from '../images/entrance/button.svg'
-import Dn from '../images/works/dn.svg'
-import Portfolio from '../images/works/portfolio.svg'
-import Bplus from '../images/works/b-plus.svg'
-import IllustChat from '../images/works/illustya.svg'
-import Tameru from '../images/works/tameru.svg'
-import Other from '../images/works/other.svg'
-
-
-
-
+import Dn from '../images/works/dn.jpg'
+import Portfolio from '../images/works/portfolio.jpg'
+import Bplus from '../images/works/b-plus.jpg'
+import IllustChat from '../images/works/illustya.jpg'
+import Tameru from '../images/works/tameru.jpg'
 import React from 'react'
 
-export const PCIcon: React.FC = () => {
-  return <img src={PCImg}  alt="camera" />
-}
-
-export const CameraIcon: React.FC = () => {
-  return <img src={CameraImg}  alt="camera" />
-}
 
 export const Logo: React.FC = () => {
   return <img src={LogoSvg}  alt="logo"  className="entrance__contents--logo"/>
@@ -59,9 +45,4 @@ export const IllustChatIcon: React.FC = () => {
 export const TameruIcon: React.FC = () => {
   return (
   <img src={Tameru}  alt="tameru" className="hover-elm" />)
-}
-
-export const OtherIcon: React.FC = () => {
-  return (
-  <img src={Other}  alt="other" className="hover-elm" />)
 }

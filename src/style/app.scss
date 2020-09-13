@@ -17,6 +17,9 @@
     max-width: 1500px;
     margin: 0 auto;
     overflow: hidden;
+    @include titleMin {
+      cursor: auto;
+    }
   }
   #cursol {
     width: 10px;
@@ -27,6 +30,9 @@
     z-index: 1001;
     border: solid 2px $white;
     pointer-events: none;
+    @include titleMin {
+      display: none;
+    }
     &__inner{
       pointer-events: none;
       position: fixed;
@@ -39,6 +45,9 @@
       transition: transform 0.1s, top, 0.1s, left 0.1s, width 0.1s, height 0.1s, background-color .5s;
       transition-timing-function: ease-out;
       z-index: 1000;
+      @include titleMin {
+        display: none;
+      }
     }
     &__outside{
       pointer-events: none;
@@ -52,6 +61,9 @@
       transition: transform 0.1s, top, 0.1s, left 0.1s, width 0.1s, height 0.1s, background-color .5s;
       transition-timing-function: ease-out;
       z-index: 1000;
+      @include titleMin {
+        display: none;
+      }
     }
   }
 }

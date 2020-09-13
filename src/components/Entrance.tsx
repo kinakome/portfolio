@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-scroll';
 import { Logo, Title, Button } from './SvgReader'
-import BackgroundImg from '../images/entrance/entrance.png'
+import BackgroundImg from '../images/entrance/entrance.jpg'
 
 type Props = {
 
