@@ -207,7 +207,7 @@ const Works: React.FC = () => {
                 </div>
               </div>
               <div className="work__detail--link">
-                <div className="icons">
+                <div className="icons icons--single">
                   <a href="https://github.com/kinakome/illustya" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon style={iconStyle} icon={faGithubSquare} className="hover-elm" />
                   </a>
