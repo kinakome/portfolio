@@ -23,7 +23,7 @@ const Works: React.FC = () => {
   const centerTime = 1300
   const titleTime = 1600
   const workTime = 200
-  const iconStyle: React.CSSProperties = {  };
+  const iconStyle: React.CSSProperties = { color: '#333' };
   const customStyles = {
     content : {
       top                   : '50%',
@@ -211,7 +211,7 @@ const Works: React.FC = () => {
                   <a href="https://github.com/kinakome/illustya" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon style={iconStyle} icon={faGithubSquare} className="hover-elm" />
                   </a>
-                  <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={() => openModal(2)} />
+                  {/* <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={() => openModal(2)} /> */}
                 </div>
               </div>
             </div>  
