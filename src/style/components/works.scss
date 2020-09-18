@@ -115,6 +115,9 @@
             height: 30px;
             width: 100%;
           }
+          @include mainMax {
+            font-size: 36px;
+          }
         }
         &--explanation{
           font-family: 'Noto Sans JP', sans-serif;
@@ -129,10 +132,17 @@
             line-height: 25px;
             width: 100%;
           }
+          @include mainMax {
+            font-size: 24px;
+            line-height: 36px;
+          }
           p{
             margin-top: 10px;
             font-size: 1.6vw;
             color: $lightBlack;
+            @include mainMax {
+              font-size: 19px;
+            }
           }
         }
         &--tech{
@@ -156,6 +166,10 @@
                 font-size: 18px;
                 line-height: 25px;
               }
+              @include mainMax {
+                font-size: 20.4px;
+                line-height: 30px;
+              }
               &--tameru{
                 font-family: 'Source Sans Pro', sans-serif;
                 font-weight: bold;
@@ -164,7 +178,11 @@
                 @include mobile {
                   font-size: 16px;
                   line-height: 25px;
-                }            
+                }     
+                @include mainMax {
+                  font-size: 16.8px;
+                  line-height: 30px;
+                }       
               }
             }
             &__detail{
@@ -175,6 +193,10 @@
                 font-size: 14px;
                 line-height: 20px;
               }   
+              @include mainMax {
+                font-size: 20.4px;
+                line-height: 30px;
+              }
             }            
           }
         }
