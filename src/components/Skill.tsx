@@ -49,12 +49,12 @@ const Skill: React.FC<Props> = () => {
         <div className="skill-detail">
           <SkillBox name="HTML CSS" period="4 years" icon={Html} width="95%" />
           <SkillBox name="Sass" period="3 years" icon={Sass} width="78.5%" />
-          <SkillBox name="Javascript" period="2.5 years" icon={Javascript} width="65.2%" />
+          <SkillBox name="JavaScript" period="2.5 years" icon={Javascript} width="65.2%" />
           <SkillBox name="jQuery" period="2.5 years" icon={Jquery} width="65.2%" />
           <SkillBox name="Vue.js" period="6 month" icon={Vue} width="30%" />
           <SkillBox name="Nuxt.js" period="6 month" icon={Nuxt} width="30%" />
           <SkillBox name="React.js" period="2 month" icon={ReactI} width="10%" />
-          <SkillBox name="Typescript" period="2 month" icon={Typescript} width="10%" />
+          <SkillBox name="TypeScript" period="2 month" icon={Typescript} width="10%" />
         </div>
         <div className="skill-type">
           <div className="skill-type__side-box--left"></div>
@@ -64,15 +64,15 @@ const Skill: React.FC<Props> = () => {
         </div>
         <div className="skill-detail">
           <SkillBox name="Ruby on Rails" period="1.3 years" icon={Rails} width="50%" />
-          <SkillBox name="Node.js Express" period="1 years" icon={Node} width="40%" />
           <SkillBox name="C# .NET" period="8 month" icon={CSharp} width="30%" />
           <SkillBox name="Azure" period="6 month" icon={Azure} width="25%" />
+          <SkillBox name="Express" period="6 month" icon={Node} width="25%" />
           <SkillBox name="Java" period="4 month" icon={Java} width="20%" />
           <SkillBox name="Kubernetes" period="3 month" icon={Kubernetes} width="15%" />
           <SkillBox name="CircleCI" period="3 month" icon={CircleCI} width="15%" />
           <SkillBox name="Firebase" period="3 month" icon={Firebase} width="15%" />
-          <SkillBox name="illustrator" period="2 year" icon={Illustrator} width="50%" />
-          <SkillBox name="adobe Xd" period="6 month" icon={Xd} width="30%" />
+          <SkillBox name="Illustrator" period="2 year" icon={Illustrator} width="50%" />
+          <SkillBox name="Adobe XD" period="6 month" icon={Xd} width="30%" />
         </div>
         <Link
               activeClass="active"
