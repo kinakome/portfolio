@@ -1,51 +1,56 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import { Reveal } from "react-genie";
 import { Animation } from "react-genie-styled-components";
-import { DnIcon, PortfolioIcon, BplusIcon, IllustChatIcon, TameruIcon } from './SvgReader'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt, faImages } from "@fortawesome/free-solid-svg-icons";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Modal from 'react-modal'
-import DnImage1 from '../images/works/screen/dn1.jpg'
-import DnImage2 from '../images/works/screen/dn2.jpg'
-import DnImage3 from '../images/works/screen/dn3.jpg'
-import Bplus1 from '../images/works/screen/b-plus1.jpg'
-import Bplus2 from '../images/works/screen/b-plus2.jpg'
-import Tameru1 from '../images/works/screen/tameru.jpg'
-import Tameru2 from '../images/works/screen/tameru2.jpg'
-
+import Modal from "react-modal";
+import {
+  DnIcon,
+  PortfolioIcon,
+  BplusIcon,
+  IllustChatIcon,
+  TameruIcon,
+} from "./SvgReader";
+import DnImage1 from "../images/works/screen/dn1.jpg";
+import DnImage2 from "../images/works/screen/dn2.jpg";
+import DnImage3 from "../images/works/screen/dn3.jpg";
+import Bplus1 from "../images/works/screen/b-plus1.jpg";
+import Bplus2 from "../images/works/screen/b-plus2.jpg";
+import Tameru1 from "../images/works/screen/tameru.jpg";
+import Tameru2 from "../images/works/screen/tameru2.jpg";
 
 const Works: React.FC = () => {
-  const lineTime = 700
-  const centerTime = 1300
-  const titleTime = 1600
-  const workTime = 200
-  const iconStyle: React.CSSProperties = { color: '#333' };
+  const lineTime = 700;
+  const centerTime = 1300;
+  const titleTime = 1600;
+  const workTime = 200;
+  const iconStyle: React.CSSProperties = { color: "#333" };
   const customStyles = {
-    content : {
-      top                   : '50%',
-      left                  : '50%',
-      right                 : 'auto',
-      bottom                : 'auto',
-      marginRight           : '-50%',
-      transform             : 'translate(-50%, -50%)',      
-    }
+    content: {
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      transform: "translate(-50%, -50%)",
+    },
   };
 
-  const [modalIsOpen,setIsOpen] = React.useState(false);
+  const [modalIsOpen, setIsOpen] = React.useState(false);
 
-  const [ShowWork,setShowWork] = React.useState(1);
-  const openModal = (work: number)  => {
+  const [ShowWork, setShowWork] = React.useState(1);
+  const openModal = (work: number) => {
     setIsOpen(true);
-    setShowWork(work)
-  }
+    setShowWork(work);
+  };
 
   const closeModal = () => {
     setIsOpen(false);
-  }
+  };
 
   const settings = {
     dots: true,
@@ -53,7 +58,7 @@ const Works: React.FC = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    adaptiveHeight:true
+    adaptiveHeight: true,
   };
 
   return (
@@ -65,64 +70,70 @@ const Works: React.FC = () => {
         contentLabel="Example Modal"
       >
         <div className="works__modal">
-          <div className="my-parts hover-elm" onClick={closeModal}><span></span></div>
+          <div className="my-parts hover-elm" onClick={closeModal}>
+            <span />
+          </div>
           <div className="slide">
             {(() => {
-                if (ShowWork === 1) {
-                    return (
-                    <Slider {...settings} >
-                      <div className="slide__content slide__content--dn">
-                        <img src={DnImage3} alt="screen"></img>
-                      </div>
-                      <div className="slide__content slide__content--dn">
-                        <img src={DnImage2} alt="screen"></img>
-                      </div>
-                      <div className="slide__content slide__content--dn">
-                        <img src={DnImage1} alt="screen"></img>
-                      </div>
-                    </Slider>);
-                }else if (ShowWork === 2){
-                  return (
-                    <Slider {...settings} >
-                      <div className="slide__content slide__content--bplus">
-                        <img src={Bplus1} alt="screen"></img>
-                      </div>
-                      <div className="slide__content slide__content--bplus">
-                        <img src={Bplus2} alt="screen"></img>
-                      </div>
-                    </Slider>
-                  )
-                }else if (ShowWork === 3){
-                  return (
-                    <Slider {...settings} >
-                      <div className="slide__content slide__content--bplus">
-                        <img src={Bplus1} alt="screen"></img>
-                      </div>
-                      <div className="slide__content slide__content--bplus">
-                        <img src={Bplus2} alt="screen"></img>
-                      </div>
-                      </Slider>
-                  )
-                }else if (ShowWork === 4){
-                  return (
-                    <Slider {...settings} >
-                      <div className="slide__content slide__content--tameru">
-                        <img src={Tameru1} alt="screen"></img>
-                      </div>
-                      <div className="slide__content slide__content--tameru">
-                        <img src={Tameru2} alt="screen"></img>
-                      </div>
-                    </Slider>
-                  )
-                }
-                return false;
+              if (ShowWork === 1) {
+                return (
+                  <Slider {...settings}>
+                    <div className="slide__content slide__content--dn">
+                      <img src={DnImage3} alt="screen" />
+                    </div>
+                    <div className="slide__content slide__content--dn">
+                      <img src={DnImage2} alt="screen" />
+                    </div>
+                    <div className="slide__content slide__content--dn">
+                      <img src={DnImage1} alt="screen" />
+                    </div>
+                  </Slider>
+                );
+              }
+              if (ShowWork === 2) {
+                return (
+                  <Slider {...settings}>
+                    <div className="slide__content slide__content--bplus">
+                      <img src={Bplus1} alt="screen" />
+                    </div>
+                    <div className="slide__content slide__content--bplus">
+                      <img src={Bplus2} alt="screen" />
+                    </div>
+                  </Slider>
+                );
+              }
+              if (ShowWork === 3) {
+                return (
+                  <Slider {...settings}>
+                    <div className="slide__content slide__content--bplus">
+                      <img src={Bplus1} alt="screen" />
+                    </div>
+                    <div className="slide__content slide__content--bplus">
+                      <img src={Bplus2} alt="screen" />
+                    </div>
+                  </Slider>
+                );
+              }
+              if (ShowWork === 4) {
+                return (
+                  <Slider {...settings}>
+                    <div className="slide__content slide__content--tameru">
+                      <img src={Tameru1} alt="screen" />
+                    </div>
+                    <div className="slide__content slide__content--tameru">
+                      <img src={Tameru2} alt="screen" />
+                    </div>
+                  </Slider>
+                );
+              }
+              return false;
             })()}
           </div>
         </div>
-      </Modal> 
+      </Modal>
       <div className="works__header">
         <Reveal delay={lineTime} animation={Animation.SlideInLeft}>
-          <div className="works__header--line"></div>
+          <div className="works__header--line" />
         </Reveal>
         <Reveal delay={centerTime} animation={Animation.FadeIn}>
           <div className="works__header--center">
@@ -138,7 +149,9 @@ const Works: React.FC = () => {
             <DnIcon />
             <div className="work__detail">
               <div className="work__detail--title">Daily Necessities</div>
-              <div className="work__detail--explanation">現在地近辺のちょっと便利な情報を表示<p>※現在開発中</p></div>
+              <div className="work__detail--explanation">
+                現在地近辺のちょっと便利な情報を表示<p>※現在開発中</p>
+              </div>
               <div className="work__detail--tech">
                 <div className="tech">
                   <div className="tech__title">Frontend</div>
@@ -151,13 +164,26 @@ const Works: React.FC = () => {
               </div>
               <div className="work__detail--link">
                 <div className="icons">
-                  <a href="https://daily-necessities-4adfb.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon style={iconStyle} icon={faExternalLinkAlt} className="hover-elm" />
+                  <a
+                    href="https://daily-necessities-4adfb.firebaseapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      style={iconStyle}
+                      icon={faExternalLinkAlt}
+                      className="hover-elm"
+                    />
                   </a>
-                  <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm"  onClick={() => openModal(1)} />
+                  <FontAwesomeIcon
+                    style={iconStyle}
+                    icon={faImages}
+                    className="hover-elm"
+                    onClick={() => openModal(1)}
+                  />
                 </div>
               </div>
-            </div>  
+            </div>
           </div>
         </Reveal>
         <Reveal delay={workTime} animation={Animation.FadeInUp}>
@@ -165,7 +191,9 @@ const Works: React.FC = () => {
             <PortfolioIcon />
             <div className="work__detail">
               <div className="work__detail--title">Portfolio</div>
-              <div className="work__detail--explanation">ポートフォリオサイト</div>
+              <div className="work__detail--explanation">
+                ポートフォリオサイト
+              </div>
               <div className="work__detail--tech">
                 <div className="tech">
                   <div className="tech__title">Frontend</div>
@@ -178,12 +206,20 @@ const Works: React.FC = () => {
               </div>
               <div className="work__detail--link">
                 <div className="icons icons--single">
-                  <a href="https://github.com/kinakome/portfolio" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon style={iconStyle} icon={faGithubSquare} className="hover-elm" />
+                  <a
+                    href="https://github.com/kinakome/portfolio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      style={iconStyle}
+                      icon={faGithubSquare}
+                      className="hover-elm"
+                    />
                   </a>
                 </div>
               </div>
-            </div>  
+            </div>
           </div>
         </Reveal>
         <Reveal delay={workTime} animation={Animation.FadeInUp}>
@@ -191,7 +227,10 @@ const Works: React.FC = () => {
             <IllustChatIcon />
             <div className="work__detail">
               <div className="work__detail--title">illust chat</div>
-              <div className="work__detail--explanation">いらすとやのイラストをストック・交換するチャットアプリ<p>※現在停止中</p></div>
+              <div className="work__detail--explanation">
+                いらすとやのイラストをストック・交換するチャットアプリ
+                <p>※現在停止中</p>
+              </div>
               <div className="work__detail--tech">
                 <div className="tech">
                   <div className="tech__title">Frontend</div>
@@ -208,13 +247,21 @@ const Works: React.FC = () => {
               </div>
               <div className="work__detail--link">
                 <div className="icons icons--single">
-                  <a href="https://github.com/kinakome/illustya" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon style={iconStyle} icon={faGithubSquare} className="hover-elm" />
+                  <a
+                    href="https://github.com/kinakome/illustya"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      style={iconStyle}
+                      icon={faGithubSquare}
+                      className="hover-elm"
+                    />
                   </a>
                   {/* <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={() => openModal(2)} /> */}
                 </div>
               </div>
-            </div>  
+            </div>
           </div>
         </Reveal>
         <Reveal delay={workTime} animation={Animation.FadeInUp}>
@@ -222,7 +269,9 @@ const Works: React.FC = () => {
             <BplusIcon />
             <div className="work__detail">
               <div className="work__detail--title">B-plus</div>
-              <div className="work__detail--explanation">学バスの時刻表アプリケーション<p>※現在停止中</p></div>
+              <div className="work__detail--explanation">
+                学バスの時刻表アプリケーション<p>※現在停止中</p>
+              </div>
               <div className="work__detail--tech">
                 <div className="tech">
                   <div className="tech__title">Frontend</div>
@@ -239,10 +288,15 @@ const Works: React.FC = () => {
               </div>
               <div className="work__detail--link">
                 <div className="icons icons--single">
-                  <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={() => openModal(3)} />
+                  <FontAwesomeIcon
+                    style={iconStyle}
+                    icon={faImages}
+                    className="hover-elm"
+                    onClick={() => openModal(3)}
+                  />
                 </div>
               </div>
-            </div>  
+            </div>
           </div>
         </Reveal>
         <Reveal delay={workTime} animation={Animation.FadeInUp}>
@@ -251,19 +305,26 @@ const Works: React.FC = () => {
             <div className="work__detail">
               <div className="tech">
                 <div className="work__detail--title">tameru</div>
-                <div className="work__detail--explanation">技術書管理アプリケーション<p>※現在開発中</p></div>
+                <div className="work__detail--explanation">
+                  技術書管理アプリケーション<p>※現在開発中</p>
+                </div>
               </div>
               <div className="tech">
                 <div className="work__detail--tech">
-                <div className="tech">
-                  <div className="tech__title--tameru">Frontend・Backend</div>
+                  <div className="tech">
+                    <div className="tech__title--tameru">Frontend・Backend</div>
                     <div className="tech__detail">Flutter</div>
                   </div>
                 </div>
               </div>
               <div className="work__detail--link">
                 <div className="icons icons--single">
-                  <FontAwesomeIcon style={iconStyle} icon={faImages} className="hover-elm" onClick={() => openModal(4)} />
+                  <FontAwesomeIcon
+                    style={iconStyle}
+                    icon={faImages}
+                    className="hover-elm"
+                    onClick={() => openModal(4)}
+                  />
                 </div>
               </div>
             </div>
@@ -271,7 +332,7 @@ const Works: React.FC = () => {
         </Reveal>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Works
+export default Works;
