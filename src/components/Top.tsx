@@ -1,12 +1,9 @@
+import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Reveal } from "react-genie";
 import { Animation } from "react-genie-styled-components";
 import { Link } from "react-scroll";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitterSquare,
-  faGithubSquare,
-} from "@fortawesome/free-brands-svg-icons";
 
 type Props = {};
 
@@ -39,20 +36,6 @@ const Top: React.FC<Props> = () => {
               製品導入に携わっており、空いた時間で個人開発を行っています。
             </div>
             <div className="top__contents--link">
-              <div className="icon">
-                <a
-                  href="https://twitter.com/mava0120?lang=js"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon
-                    style={iconStyle}
-                    icon={faTwitterSquare}
-                    className="hover-elm"
-                  />
-                </a>
-                <p>@mava0120</p>
-              </div>
               <div className="icon">
                 <a
                   href="https://github.com/kinakome"
