@@ -2,12 +2,13 @@ import React from "react";
 import { Reveal } from "react-genie";
 import { Animation } from "react-genie-styled-components";
 import { Link } from "react-scroll";
-import SkillBox from "./Skillbox";
 import Azure from "../images/skills/azure.svg";
 import CSharp from "../images/skills/c-sharp.svg";
 import CircleCI from "../images/skills/circleci.svg";
 import Firebase from "../images/skills/firebase.svg";
 import Html from "../images/skills/html.svg";
+import Illustrator from "../images/skills/illustrator.svg";
+import Java from "../images/skills/java.svg";
 import Javascript from "../images/skills/javascript.svg";
 import Jquery from "../images/skills/jquery.svg";
 import Kubernetes from "../images/skills/kubernetes.svg";
@@ -18,9 +19,8 @@ import ReactI from "../images/skills/react.svg";
 import Sass from "../images/skills/sass.svg";
 import Typescript from "../images/skills/typescript.svg";
 import Vue from "../images/skills/vue.svg";
-import Illustrator from "../images/skills/illustrator.svg";
 import Xd from "../images/skills/xd.svg";
-import Java from "../images/skills/java.svg";
+import SkillBox from "./Skillbox";
 
 type Props = {};
 
@@ -60,8 +60,8 @@ const Skill: React.FC<Props> = () => {
             icon={Jquery}
             width="65.2%"
           />
-          <SkillBox name="Vue.js" period="6 month" icon={Vue} width="30%" />
-          <SkillBox name="Nuxt.js" period="6 month" icon={Nuxt} width="30%" />
+          <SkillBox name="Vue.js" period="7 month" icon={Vue} width="33%" />
+          <SkillBox name="Nuxt.js" period="7 month" icon={Nuxt} width="33%" />
           <SkillBox
             name="React.js"
             period="2 month"
@@ -116,7 +116,7 @@ const Skill: React.FC<Props> = () => {
             icon={Illustrator}
             width="50%"
           />
-          <SkillBox name="Adobe XD" period="6 month" icon={Xd} width="30%" />
+          <SkillBox name="Adobe XD" period="7 month" icon={Xd} width="33%" />
         </div>
         <Link activeClass="active" to="works" spy smooth duration={800}>
           <div className="skill__button hover-elm">
