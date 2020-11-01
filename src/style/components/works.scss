@@ -103,7 +103,7 @@
           font-family: 'Source Sans Pro', sans-serif;
           font-weight: bold;
           font-size: 3vw;
-          text-align: center;
+          // text-align: center;
           padding-bottom: 2%;
           border-bottom: 2px $black solid;
           width: 80%;
@@ -125,7 +125,6 @@
           line-height: 3vw;
           width: 80%;
           margin: 0 auto;
-          text-align: center;
           margin-bottom: 20px;
           @include mobile {
             font-size: 18px;
@@ -146,14 +145,11 @@
           }
         }
         &--tech{
-          width: 95%;
-          margin: 0 auto;
-          text-align: center;
+          width: 80%;
           margin-bottom: 20px;
           display: flex;
-          justify-content: center;
           flex-wrap: wrap;
-          padding: 0 5%;
+          margin: 0 auto;
 
           .tech{
             width: 50%;
@@ -201,9 +197,8 @@
           }
         }
         &--link{
-          padding: 0 11%;
+          padding: 20px 11%;
           .icons{
-            margin: 0 auto; 
             width: 70px;
             &--single{
               width: 30px;

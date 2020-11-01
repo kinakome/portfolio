@@ -1,27 +1,26 @@
-import React, { useState } from "react";
-import { Reveal } from "react-genie";
-import { Animation } from "react-genie-styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt, faImages } from "@fortawesome/free-solid-svg-icons";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import { Reveal } from "react-genie";
+import { Animation } from "react-genie-styled-components";
 import Modal from "react-modal";
-import {
-  DnIcon,
-  PortfolioIcon,
-  BplusIcon,
-  IllustChatIcon,
-  TameruIcon,
-} from "./SvgReader";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import Bplus1 from "../images/works/screen/b-plus1.jpg";
+import Bplus2 from "../images/works/screen/b-plus2.jpg";
 import DnImage1 from "../images/works/screen/dn1.jpg";
 import DnImage2 from "../images/works/screen/dn2.jpg";
 import DnImage3 from "../images/works/screen/dn3.jpg";
-import Bplus1 from "../images/works/screen/b-plus1.jpg";
-import Bplus2 from "../images/works/screen/b-plus2.jpg";
 import Tameru1 from "../images/works/screen/tameru.jpg";
 import Tameru2 from "../images/works/screen/tameru2.jpg";
+import {
+  BplusIcon, DnIcon,
+
+
+  IllustChatIcon, PortfolioIcon
+} from "./SvgReader";
 
 const Works: React.FC = () => {
   const lineTime = 700;
@@ -293,37 +292,6 @@ const Works: React.FC = () => {
                     icon={faImages}
                     className="hover-elm"
                     onClick={() => openModal(3)}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </Reveal>
-        <Reveal delay={workTime} animation={Animation.FadeInUp}>
-          <div className="work">
-            <TameruIcon />
-            <div className="work__detail">
-              <div className="tech">
-                <div className="work__detail--title">tameru</div>
-                <div className="work__detail--explanation">
-                  技術書管理アプリケーション<p>※現在開発中</p>
-                </div>
-              </div>
-              <div className="tech">
-                <div className="work__detail--tech">
-                  <div className="tech">
-                    <div className="tech__title--tameru">Frontend・Backend</div>
-                    <div className="tech__detail">Flutter</div>
-                  </div>
-                </div>
-              </div>
-              <div className="work__detail--link">
-                <div className="icons icons--single">
-                  <FontAwesomeIcon
-                    style={iconStyle}
-                    icon={faImages}
-                    className="hover-elm"
-                    onClick={() => openModal(4)}
                   />
                 </div>
               </div>
