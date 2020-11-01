@@ -150,7 +150,9 @@
           display: flex;
           flex-wrap: wrap;
           margin: 0 auto;
-
+          @include mobile {
+            width: 100%;
+          }   
           .tech{
             width: 50%;
             &__title{
@@ -198,6 +200,9 @@
         }
         &--link{
           padding: 20px 11%;
+          @include mobile {
+            padding: 20px 0%;
+          }   
           .icons{
             width: 70px;
             &--single{
