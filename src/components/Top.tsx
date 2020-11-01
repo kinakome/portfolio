@@ -1,4 +1,5 @@
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
+import { faBook } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Reveal } from "react-genie";
@@ -48,7 +49,21 @@ const Top: React.FC<Props> = () => {
                     className="hover-elm"
                   />
                 </a>
-                <p>@kinakome</p>
+                <p>GitHub</p>
+              </div>
+              <div className="icon">
+                <a
+                  href="https://cocoda-design.com/kinakome"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    style={iconStyle}
+                    icon={faBook}
+                    className="hover-elm"
+                  />
+                </a>
+                <p>デザインポートフォリオ</p>
               </div>
             </div>
             <Reveal delay={buttonTime} animation={Animation.FadeIn}>

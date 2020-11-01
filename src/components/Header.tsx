@@ -1,9 +1,7 @@
 import React from "react";
-import { Link } from "react-scroll";
-import { Reveal } from "react-genie";
-import { Animation } from "react-genie-styled-components";
 import { HamburgerVortex } from "react-animated-burgers";
 import Modal from "react-modal";
+import { Link } from "react-scroll";
 
 type Props = {};
 
@@ -17,8 +15,7 @@ const Header: React.FC<Props> = () => {
   };
 
   const customStyles = {
-    content: {
-    },
+    content: {},
   };
   return (
     <div className="header">
