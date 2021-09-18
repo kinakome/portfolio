@@ -1,5 +1,8 @@
-import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
-import { faBook } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithubSquare,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import { faBook, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Reveal } from "react-genie";
@@ -30,11 +33,10 @@ const Top: React.FC<Props> = () => {
         <div className="top__right">
           <div className="top__contents">
             <div className="top__contents--name">松岡 諒</div>
-            <div className="top__contents--age">1994年生まれ 26歳</div>
+            <div className="top__contents--age">1994年生まれ 27歳</div>
             <div className="top__contents--history">
               大学2年生でプログラミングを始めました。在学中はサークルおよび個人でのアプリケーション開発の他に、
-              プログラミングスクールでインターンを1年半ほど行っていました。現在はSIerにてAzureの構築やアプリケーション制作・
-              製品導入に携わっており、空いた時間で個人開発を行っています。
+              プログラミングスクールでインターンを1年半ほど行っていました。現在はアプリケーション開発やデザイン業務を行っています。
             </div>
             <div className="top__contents--link">
               <div className="icon">
@@ -48,8 +50,8 @@ const Top: React.FC<Props> = () => {
                     icon={faGithubSquare}
                     className="hover-elm"
                   />
+                  <p>GitHub</p>
                 </a>
-                <p>GitHub</p>
               </div>
               <div className="icon">
                 <a
@@ -62,8 +64,36 @@ const Top: React.FC<Props> = () => {
                     icon={faBook}
                     className="hover-elm"
                   />
+                  <p>デザインポートフォリオ</p>
                 </a>
-                <p>デザインポートフォリオ</p>
+              </div>
+              <div className="icon">
+                <a
+                  href="https://www.instagram.com/47logos/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    style={iconStyle}
+                    icon={faInstagram}
+                    className="hover-elm"
+                  />
+                  <p>47 LOGOS (Instagram)</p>
+                </a>
+              </div>
+              <div className="icon">
+                <a
+                  href="https://qiita.com/kinakome/items/a598b9d60862e2aad16a"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    style={iconStyle}
+                    icon={faSearch}
+                    className="hover-elm"
+                  />
+                  <p>Qiita</p>
+                </a>
               </div>
             </div>
             <Reveal delay={buttonTime} animation={Animation.FadeIn}>

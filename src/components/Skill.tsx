@@ -46,13 +46,13 @@ const Skill: React.FC<Props> = () => {
           <span className="skill-type__title">Frontend</span>
         </div>
         <div className="skill-detail">
-          <SkillBox name="HTML CSS" period="4 years" icon={Html} width="95%" />
-          <SkillBox name="Sass" period="3 years" icon={Sass} width="78.5%" />
+          <SkillBox name="HTML CSS" period="5 years" icon={Html} width="95%" />
+          <SkillBox name="Sass" period="4 years" icon={Sass} width="85%" />
           <SkillBox
             name="JavaScript"
-            period="2.5 years"
+            period="3.5 years"
             icon={Javascript}
-            width="65.2%"
+            width="80%"
           />
           <SkillBox
             name="jQuery"
@@ -64,15 +64,15 @@ const Skill: React.FC<Props> = () => {
           <SkillBox name="Nuxt.js" period="7 month" icon={Nuxt} width="33%" />
           <SkillBox
             name="React.js"
-            period="2 month"
+            period="1.5 year"
             icon={ReactI}
-            width="10%"
+            width="50%"
           />
           <SkillBox
             name="TypeScript"
-            period="2 month"
+            period="1.2 year"
             icon={Typescript}
-            width="10%"
+            width="50%"
           />
         </div>
         <div className="skill-type">
@@ -86,10 +86,10 @@ const Skill: React.FC<Props> = () => {
             name="Ruby on Rails"
             period="1.3 years"
             icon={Rails}
-            width="50%"
+            width="45%"
           />
           <SkillBox name="C# .NET" period="8 month" icon={CSharp} width="30%" />
-          <SkillBox name="Azure" period="6 month" icon={Azure} width="25%" />
+          <SkillBox name="Azure" period="1 year" icon={Azure} width="45%" />
           <SkillBox name="Express" period="6 month" icon={Node} width="25%" />
           <SkillBox name="Java" period="4 month" icon={Java} width="20%" />
           <SkillBox
@@ -112,17 +112,17 @@ const Skill: React.FC<Props> = () => {
           />
           <SkillBox
             name="Illustrator"
-            period="2 year"
+            period="1.5 year"
             icon={Illustrator}
             width="50%"
           />
-          <SkillBox name="Adobe XD" period="7 month" icon={Xd} width="33%" />
+          <SkillBox name="Adobe XD" period="1.5 year" icon={Xd} width="50%" />
         </div>
-        <Link activeClass="active" to="works" spy smooth duration={800}>
+        {/* <Link activeClass="active" to="works" spy smooth duration={800}>
           <div className="skill__button hover-elm">
             <div className="skill__button--arrow" />
           </div>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

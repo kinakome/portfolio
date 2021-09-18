@@ -47,7 +47,7 @@ const App: React.FC = () => {
           <Top />
           <Header />
           <Skill />
-          <Works />
+          {/* <Works /> */}
         </div>
       </div>
     </main>
