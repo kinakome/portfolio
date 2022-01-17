@@ -55,7 +55,7 @@ const Top: React.FC<Props> = () => {
               </div>
               <div className="icon">
                 <a
-                  href="https://cocoda-design.com/kinakome"
+                  href="https://training.cocoda.design/kinakome"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
